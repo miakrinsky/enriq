@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --default-font-family: "Noto Sans Hebrew", ui-sans-serif, system-ui,
+    -apple-system, "Segoe UI", Roboto, Arial, "Apple Color Emoji",
+    "Segoe UI Emoji";
+}
+
+@theme {
+  /* primary - purple */
+  --color-purple-50: #f7f4fb;
+  --color-purple-100: #ede7f6;
+  --color-purple-200: #d9cceb;
+  --color-purple-300: #c3b0e0;
+  --color-purple-400: #ab96cd;
+  --color-purple-500: #8b6fb8;
+  --color-purple-600: #654597;
+  --color-purple-700: #533878;
+  --color-purple-800: #422c5f;
+  --color-purple-900: #32234a;
+
+  /* secondery - grey */
+  --color-neutral-50: #fafafa;
+  --color-neutral-100: #f5f5f5;
+  --color-neutral-200: #e5e5e5;
+  --color-neutral-300: #d5d5d5;
+  --color-neutral-400: #b8b8b8;
+  --color-neutral-500: #9a9a9a;
+  --color-neutral-600: #737373;
+  --color-neutral-700: #525252;
+  --color-neutral-800: #404040;
+  --color-neutral-900: #262626;
+}
+.glow-overlay {
+  --glow-size: 25rem;
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+  opacity: var(--glow-opacity, 0);
+  mask: radial-gradient(
+    var(--glow-size) var(--glow-size) at var(--glow-x) var(--glow-y),
+    var(--glow-color) 1%,
+    transparent 50%
+  );
+  transition: 400ms mask ease;
+  will-change: mask;
+}
