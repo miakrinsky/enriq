@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { navLinkStyles } from "../../utils/styles";
 import { useState } from "react";
-import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
+import { List, X } from "phosphor-react";
 import Button from "../ui/Button";
 import logo from "../../assets/logonobg.png";
 
@@ -15,19 +15,23 @@ function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-neutral-300/30 backdrop-blur-md border-b border-neutral-300">
-      <div className="text-2xl max-w-full mx-auto px-4 h-20 flex justify-between items-center">
+      <div className="text-2xl max-w-full mx-auto px-4 h-16 md:h-20 flex md:flex-row-reverse justify-between items-center">
         <div className="flex items-center gap-4">
           <button className="md:hidden" onClick={toggleMenu}>
             <div className="relative w-9 h-9">
-              <RxHamburgerMenu
-                className={`absolute inset-0 h-9 w-9 transition-all duration-300 ease-in-out ${
+              <List
+                size={36}
+                weight="bold"
+                className={`absolute inset-0 transition-all duration-300 ease-in-out ${
                   isMenuOpen
                     ? "rotate-90 opacity-0 scale-50"
                     : "rotate-0 opacity-100 scale-100"
                 }`}
               />
-              <RxCross1
-                className={`absolute inset-0 h-9 w-9 transition-all duration-300 ease-in-out ${
+              <X
+                size={36}
+                weight="bold"
+                className={`absolute inset-0 transition-all duration-300 ease-in-out ${
                   isMenuOpen
                     ? "rotate-0 opacity-100 scale-100"
                     : "-rotate-90 opacity-0 scale-50"
@@ -36,8 +40,8 @@ function Header() {
             </div>
           </button>
 
-          <NavLink to="/" className="flex-shrink-0">
-            <img className="h-56 mt-3" src={logo} alt="Enriq Group logo" />
+          <NavLink to="/contact" className="hidden md:block">
+            <Button>דברו איתנו</Button>
           </NavLink>
         </div>
 
@@ -56,8 +60,12 @@ function Header() {
           </NavLink>
         </nav>
 
-        <NavLink to="/contact" className="hidden md:block">
-          <Button>דברו איתנו</Button>
+        <NavLink to="/" className="flex-shrink-0">
+          <img
+            className="h-32 md:h-56 mt-2 md:mt-3"
+            src={logo}
+            alt="Enriq Group logo"
+          />
         </NavLink>
       </div>
 

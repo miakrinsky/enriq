@@ -6,11 +6,13 @@ import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
 import PageNotFound from "./pages/PageNotFound";
 import ScrollToTop from "./components/ui/ScrollToTop";
+import ScrollToTopOnRouteChange from "./components/ui/ScrollToTopOnRouteChange";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTopOnRouteChange />
         <ScrollToTop />
         <Layout>
           <Routes>

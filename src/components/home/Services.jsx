@@ -1,22 +1,23 @@
 import Button from "../ui/Button";
 import { NavLink } from "react-router-dom";
+import { Buildings, Wrench, Handshake } from "phosphor-react";
 
 function Services() {
   const services = [
     {
-      icon: "🏘️",
+      icon: <Buildings size={48} weight="duotone" color="#9333ea" />,
       title: 'תיווך נדל"ן להשקעה',
       description:
         "מוצאים עבורכם את הדירות עם הפוטנציאל הגבוה ביותר. מתמחים בזיהוי הזדמנות טרום השוק.",
     },
     {
-      icon: "🔨",
+      icon: <Wrench size={48} weight="duotone" color="#9333ea" />,
       title: "שיפוצים חכמים",
       description:
         "שיפוצים ממוקדי תשואה - משקיעים רק במה שמגדיל את שווי הנכס. עבודה מקצועית, בזמן ובתקציב.",
     },
     {
-      icon: "🤝",
+      icon: <Handshake size={48} weight="duotone" color="#9333ea" />,
       title: "ליווי משקיעים",
       description:
         "מהרכישה ועד ההשכרה - מלווים אתכם בכל התהליך. ייעוץ, תכנון, וניהול פרויקט מלא.",
@@ -37,7 +38,7 @@ function Services() {
           >
             <div className="absolute top-0 right-0 w-2 h-full bg-gradient-to-b from-purple-600 to-purple-400 rounded-r-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
-            <div className="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300">
+            <div className="mb-6 transform group-hover:scale-110 transition-transform duration-300">
               {service.icon}
             </div>
 

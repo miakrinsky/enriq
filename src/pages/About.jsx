@@ -1,19 +1,26 @@
 import Section from "../components/ui/Section";
+import {
+  MagnifyingGlass,
+  Briefcase,
+  Target,
+  Trophy,
+  Check,
+} from "phosphor-react";
 
 function About() {
   const values = [
     {
-      icon: "🔍",
+      icon: <MagnifyingGlass size={56} weight="duotone" color="#9333ea" />,
       title: "שקיפות מלאה",
       description: "תמיד תדעו בדיוק מה קורה עם ההשקעה שלכם",
     },
     {
-      icon: "💼",
+      icon: <Briefcase size={56} weight="duotone" color="#9333ea" />,
       title: "מקצועיות",
       description: "עובדים רק עם בעלי מקצוע מנוסים ואמינים",
     },
     {
-      icon: "🎯",
+      icon: <Target size={56} weight="duotone" color="#9333ea" />,
       title: "תוצאות",
       description: "מחויבים לתשואה מקסימלית על כל שקל שמושקע",
     },
@@ -78,7 +85,9 @@ function About() {
         <div className="relative max-w-3xl mx-auto">
           <div className="absolute inset-0 bg-gradient-to-r from-purple-200 to-purple-100 rounded-3xl blur-2xl opacity-30"></div>
           <div className="relative bg-gradient-to-br from-purple-50 to-white p-10 md:p-12 rounded-3xl shadow-xl border border-purple-100">
-            <div className="text-6xl text-center mb-6">🏆</div>
+            <div className="flex justify-center mb-6">
+              <Trophy size={64} weight="duotone" color="#9333ea" />
+            </div>
             <p className="text-xl text-neutral-700 text-center leading-relaxed">
               אנחנו לא רק מוכרים דירות או משפצים אותן - אנחנו בונים עתיד כלכלי
               יציב עבור המשקיעים שלנו
@@ -99,7 +108,7 @@ function About() {
                 key={index}
                 className="group bg-white p-10 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center transform hover:-translate-y-2"
               >
-                <div className="text-6xl mb-6 transform group-hover:scale-110 transition-transform duration-300">
+                <div className="mb-6 transform group-hover:scale-110 transition-transform duration-300 flex justify-center">
                   {value.icon}
                 </div>
 
@@ -129,7 +138,12 @@ function About() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg">
                 <div className="flex items-start gap-4">
-                  <div className="text-3xl">✓</div>
+                  <Check
+                    size={28}
+                    weight="bold"
+                    color="#a78bfa"
+                    className="flex-shrink-0 mt-1"
+                  />
                   <div>
                     <h4 className="font-bold mb-2 text-purple-300">
                       ניסיון מוכח
@@ -141,7 +155,12 @@ function About() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="text-3xl">✓</div>
+                  <Check
+                    size={28}
+                    weight="bold"
+                    color="#a78bfa"
+                    className="flex-shrink-0 mt-1"
+                  />
                   <div>
                     <h4 className="font-bold mb-2 text-purple-300">
                       רשת קשרים
@@ -153,7 +172,12 @@ function About() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="text-3xl">✓</div>
+                  <Check
+                    size={28}
+                    weight="bold"
+                    color="#a78bfa"
+                    className="flex-shrink-0 mt-1"
+                  />
                   <div>
                     <h4 className="font-bold mb-2 text-purple-300">
                       ליווי מלא
@@ -165,7 +189,12 @@ function About() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="text-3xl">✓</div>
+                  <Check
+                    size={28}
+                    weight="bold"
+                    color="#a78bfa"
+                    className="flex-shrink-0 mt-1"
+                  />
                   <div>
                     <h4 className="font-bold mb-2 text-purple-300">
                       שקיפות מלאה
