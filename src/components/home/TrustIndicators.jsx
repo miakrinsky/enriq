@@ -3,18 +3,23 @@ function TrustIndicators() {
     {
       icon: "✅",
       title: "ניסיון מוכח",
-      description: "מעל 50 דירות שופצו והושכרו בהצלחה בשכונת הדר בחיפה",
+      description: "עשרות דירות שנרכשו ושופצו דרכינו",
+    },
+    {
+      icon: "🏢",
+      title: 'היכרות אישית עם השקעות נדל"ן בחיפה',
+      description: "אנחנו בעלים של מספר רב של נכסים, ביניהם גם בניין שלם",
     },
     {
       icon: "🔄",
       title: "שירות מקצה לקצה",
-      description:
-        "מהרכישה, דרך השיפוץ, ועד לניהול נכס והשכרה - אנחנו איתכם בכל שלב",
+      description: "איתור עסקאות, ליווי ברכישה, שיפוץ, השכרה ומכירה עתידית",
     },
     {
       icon: "📈",
       title: "תשואה מקסימלית",
-      description: "מתמחים במקסום תשואה על ההשקעה - שיפוצים חכמים שמניבים יותר",
+      description:
+        "עבודה מקצועית מביאה לתוצאות טובות בפער משמעותי, אם יודעים מה נכון לעשות. גם בשכירות וגם במכירה עתידית",
     },
   ];
 
@@ -24,7 +29,7 @@ function TrustIndicators() {
         למה משקיעים בוחרים בנו?
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
         {indicators.map((item, index) => (
           <div
             key={index}

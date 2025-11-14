@@ -1,7 +1,11 @@
 import { NavLink } from "react-router-dom";
 import Button from "../ui/Button";
+import { projects } from "../../data/projects";
+import ProjectCard from "../gallery/ProjectCard";
 
 function FeaturedProjects() {
+  const featured = projects.slice(0, 3);
+
   return (
     <div className="py-16">
       <div className="text-center mb-16">
@@ -14,20 +18,8 @@ function FeaturedProjects() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-        {[1, 2, 3].map((item) => (
-          <div
-            key={item}
-            className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
-          >
-            <div className="bg-gradient-to-br from-neutral-200 to-neutral-300 h-80 flex items-center justify-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
-              <p className="text-neutral-500 z-10">תמונה לפני/אחרי {item}</p>
-            </div>
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-              <p className="text-white font-semibold">פרויקט {item}</p>
-              <p className="text-neutral-200 text-sm">הדר, חיפה</p>
-            </div>
-          </div>
+        {featured.map((project) => (
+          <ProjectCard key={project.id} project={project} />
         ))}
       </div>
 

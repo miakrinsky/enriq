@@ -3,7 +3,7 @@ import { navLinkStyles } from "../../utils/styles";
 import { useState } from "react";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import Button from "../ui/Button";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/logonobg.png";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,7 +14,7 @@ function Header() {
   }
 
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-neutral-300">
+    <header className="sticky top-0 z-50 bg-neutral-300/30 backdrop-blur-md border-b border-neutral-300">
       <div className="text-2xl max-w-full mx-auto px-4 h-20 flex justify-between items-center">
         <div className="flex items-center gap-4">
           <button className="md:hidden" onClick={toggleMenu}>
@@ -37,7 +37,7 @@ function Header() {
           </button>
 
           <NavLink to="/" className="flex-shrink-0">
-            <img className="h-20" src={logo} alt="Enriq Group logo" />
+            <img className="h-56 mt-3" src={logo} alt="Enriq Group logo" />
           </NavLink>
         </div>
 

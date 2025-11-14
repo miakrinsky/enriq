@@ -21,7 +21,7 @@ function InteractiveGrid({
     return Array.from({ length: count }, (_, i) => i * spacing);
   }, [viewportHeight, spacing]);
 
-  const calculateEffect = (linePosition, mousePos, isVertical) => {
+  const calculateEffect = (linePosition, mousePos) => {
     const distance = Math.abs(mousePos - linePosition);
 
     if (distance > maxDistance) {

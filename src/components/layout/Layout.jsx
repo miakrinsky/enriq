@@ -31,12 +31,9 @@ function Layout({ children }) {
       <InteractiveGrid mousePosition={mousePosition} />
       <div className="relative min-h-screen">
         <div className="fixed inset-0 -z-10 overflow-hidden">
-          <div className="absolute inset-0 bg-white"></div>
-
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,_white_40%,_transparent),radial-gradient(ellipse_80%_50%_at_80%_10%,_#f3e8ff_40%,_transparent),radial-gradient(ellipse_80%_50%_at_20%_90%,_#e9d5ff_40%,_transparent)] bg-white"></div>{" "}
           <div className="absolute -top-40 -right-40 w-[700px] h-[700px] bg-gradient-to-br from-purple-200/40 to-pink-200/30 rounded-full filter blur-[150px]"></div>
-
           <div className="absolute top-1/4 -left-48 w-[800px] h-[800px] bg-gradient-to-br from-purple-100/30 to-blue-100/20 rounded-full filter blur-[160px] animate-blob"></div>
-
           <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-gradient-to-br from-pink-100/30 to-purple-100/30 rounded-full filter blur-[140px] animate-blob animation-delay-2000"></div>
         </div>
         <div className="relative flex flex-col min-h-screen">

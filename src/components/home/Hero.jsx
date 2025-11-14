@@ -6,16 +6,16 @@ function Hero() {
     <div className="text-center py-20 px-4">
       <div className="animate-fade-in">
         <h1 className=" md:text-6xl font-bold text-neutral-900 mb-6 leading-tight">
-          הפכו דירות השקעה
+          להיות בעלים של הדירה הכי יפה ברחוב, שמכניסה הכי הרבה,
           <br />
           <span className="bg-gradient-to-r from-purple-600 to-purple-400 bg-clip-text text-transparent">
-            למניבות רווח
+            ולהנות מהדרך זה קל!{" "}
           </span>
         </h1>
 
         <p className="text-xl md:text-2xl text-neutral-600 mb-10 max-w-3xl mx-auto leading-relaxed">
-          מתמחים בשיפוצים ותיווך נדל"ן בחיפה - מלווים משקיעים מהרכישה ועד להשכרה
-          הראשונה
+          אנחנו מתמחים בדירות להשקעה, שיפוצים מיוחדים ומדוייקים וליווי מלא לאורך
+          כל הדרך!
         </p>
 
         <NavLink to="/contact">

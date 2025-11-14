@@ -5,7 +5,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Gallery from "./pages/Gallery";
 import PageNotFound from "./pages/PageNotFound";
-import ScrollToTop from "./components/layout/ScrollToTop";
+import ScrollToTop from "./components/ui/ScrollToTop";
 
 function App() {
   return (

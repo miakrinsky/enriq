@@ -35,7 +35,7 @@ function Services() {
             key={index}
             className="group relative bg-gradient-to-br from-white to-neutral-50 p-8 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 border border-neutral-200 hover:border-purple-200"
           >
-            <div className="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-purple-600 to-purple-400 rounded-r-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            <div className="absolute top-0 right-0 w-2 h-full bg-gradient-to-b from-purple-600 to-purple-400 rounded-r-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
             <div className="text-5xl mb-6 transform group-hover:scale-110 transition-transform duration-300">
               {service.icon}

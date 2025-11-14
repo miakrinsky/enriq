@@ -19,7 +19,7 @@ function CallToAction() {
 
             <NavLink to="/contact">
               <Button className="bg-stone-400 text-purple-600 hover:bg-neutral-50 px-12 py-4 text-lg font-semibold transform hover:scale-105 transition-all duration-200 shadow-xl">
-                קבלו הצעת מחיר חינם
+                מוכנים להתחיל?
               </Button>
             </NavLink>
           </div>
