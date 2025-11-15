@@ -14,9 +14,11 @@ function ProjectCard({ project }) {
           style={{ height: "320px" }}
           className="rounded-2xl"
         />
-        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-white/70 to-transparent p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-          <p>{project.street}</p>
-          <p>
+        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-stone-400 to-transparent p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+          <p className="text-stone-200 font-bold text-shadow-stone-500 text-shadow-sm">
+            {project.street}
+          </p>
+          <p className="text-stone-200 text-shadow-stone-500 text-shadow-sm">
             {project.rooms} חדרים • {project.squareMeters} מ"ר
           </p>
         </div>

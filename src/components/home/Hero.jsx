@@ -1,41 +1,56 @@
 import { NavLink } from "react-router-dom";
 import Button from "../ui/Button";
+import hero from "../../assets/hero.svg";
 
 function Hero() {
   return (
-    <div className="text-center py-20 px-4">
-      <div className="animate-fade-in">
-        <h1 className=" md:text-6xl font-bold text-neutral-900 mb-6 leading-tight">
-          להיות בעלים של הדירה הכי יפה ברחוב, שמכניסה הכי הרבה,
-          <br />
-          <span className="bg-gradient-to-r from-purple-600 to-purple-400 bg-clip-text text-transparent">
-            ולהנות מהדרך זה קל!{" "}
-          </span>
-        </h1>
-
-        <p className="text-xl md:text-2xl text-neutral-600 mb-10 max-w-3xl mx-auto leading-relaxed">
-          אנחנו מתמחים בדירות להשקעה, שיפוצים מיוחדים ומדוייקים וליווי מלא לאורך
-          כל הדרך!
-        </p>
-
-        <NavLink to="/contact">
-          <Button className="px-10 py-4 text-lg transform hover:scale-105 transition-transform duration-200 shadow-lg hover:shadow-xl">
-            קבלו הצעת מחיר חינם
-          </Button>
-        </NavLink>
-      </div>
-
-      <div className="mt-20 max-w-5xl mx-auto">
+    <div className="text-center px-4">
+      <div className="relative max-w-5xl mx-auto animate-fade-in shadow-xl rounded-2xl overflow-hidden">
         <div className="relative group">
-          <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-purple-400 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-500"></div>
-          <div className="relative bg-gradient-to-br from-purple-50 via-white to-neutral-100 rounded-2xl h-96 flex items-center justify-center shadow-xl overflow-hidden">
-            <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-            <p className="text-neutral-400 text-lg z-10">
-              [תמונת Hero / וידאו רקע]
-            </p>
+          <div className="relative rounded-2xl flex items-center justify-center overflow-hidden">
+            <img
+              src={hero}
+              className="w-full h-[555px] object-cover"
+              alt="Hero Background"
+            />
           </div>
         </div>
+
+        {/* שכבת ה-overlay עכשיו משתמשת ב-flex-col ו-justify-between
+            כדי למקם את התוכן הראשי (h1) למעלה, ואת הכפתור למטה. */}
+        <div className="absolute inset-0 flex flex-col justify-between items-center p-4 bg-black/30">
+          {/* DIV חדש לתוכן הראשי - יתרכז אוטומטית למעלה על ידי justify-between */}
+          <div className="flex flex-col items-center justify-center flex-grow">
+            <h1 className="mt-8 text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight drop-shadow-md">
+              להיות בעלים של הדירה הכי יפה ברחוב, שמכניסה הכי הרבה,
+              <br />
+              <span className="bg-gradient-to-r from-purple-400 to-purple-200 bg-clip-text text-transparent">
+                ולהנות מהדרך זה קל!{" "}
+              </span>
+            </h1>
+          </div>
+
+          {/* הכפתור - יידחף לתחתית על ידי justify-between */}
+          <NavLink to="/contact" className="mb-4">
+            {" "}
+            {/* הוספנו mb-4 למרווח קטן */}
+            <Button
+              className="px-8 md:px-10 py-3 md:py-4 text-base md:text-lg 
+                         bg-white/20 backdrop-blur-xs text-neutral-800 
+                         shadow-lg rounded-xl
+                         hover:bg-white/30 hover:text-neutral-900 hover:shadow-xl 
+                         transform hover:scale-105 transition-all duration-300"
+            >
+              קבלו הצעת מחיר חינם
+            </Button>
+          </NavLink>
+        </div>
       </div>
+
+      <p className="text-lg sm:text-xl md:text-2xl text-neutral-600 mt-10 md:mt-12 max-w-3xl mx-auto leading-relaxed px-2">
+        אנחנו מתמחים בדירות להשקעה, שיפוצים מיוחדים ומדוייקים וליווי מלא לאורך
+        כל הדרך!
+      </p>
     </div>
   );
 }

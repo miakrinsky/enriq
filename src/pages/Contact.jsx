@@ -24,7 +24,7 @@ function Contact() {
         </div>
       </Section>
 
-      <Section bg="gray">
+      <Section>
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
             <div className="space-y-8">
@@ -37,8 +37,8 @@ function Contact() {
                 </p>
               </div>
 
-              <div className="space-y-6">
-                <div className="flex items-start gap-4 group">
+              <div className="space-y-6 grid grid-cols-2 lg:grid-cols-1">
+                <div className="flex items-start gap-4 group ">
                   <div className="bg-purple-100 p-4 rounded-xl group-hover:bg-purple-200 transition-colors duration-300 flex-shrink-0">
                     <Phone size={32} weight="duotone" color="#9333ea" />
                   </div>
@@ -50,9 +50,12 @@ function Contact() {
                     >
                       052-7500-943
                     </a>
-                    <p className="text-sm text-neutral-500 mt-2">
-                      א'-ה' 9:00-18:00
-                    </p>
+                    <a
+                      href="tel:0527500941"
+                      className="text-neutral-600 hover:text-purple-600 transition-colors duration-200 block text-lg"
+                    >
+                      052-7500-941
+                    </a>
                   </div>
                 </div>
 
