@@ -8,6 +8,48 @@ import project2after from "../assets/projects/project2/project2after.jpg";
 //project 3
 import project3before from "../assets/projects/project3/project3before.jpg";
 import project3after from "../assets/projects/project3/project3after.jpg";
+//project 4
+import project4before from "../assets/projects/project4/project4before.jpg";
+import project4after from "../assets/projects/project4/project4after.jpg";
+//project 5
+import project5before from "../assets/projects/project5/project5before.jpg";
+import project5after from "../assets/projects/project5/project5after.jpg";
+//project 6
+import project6before from "../assets/projects/project6/project6before.jpg";
+import project6after from "../assets/projects/project6/project6after.jpg";
+//project 7
+import project7before from "../assets/projects/project7/project7before.jpg";
+import project7after from "../assets/projects/project7/project7after.jpg";
+//project 8
+import project8before from "../assets/projects/project8/project8before.jpg";
+import project8after from "../assets/projects/project8/project8after.jpg";
+//project 9
+import project9before from "../assets/projects/project9/project9before.jpg";
+import project9after from "../assets/projects/project9/project9after.jpg";
+//project 10
+import project10before from "../assets/projects/project10/project10before.jpg";
+import project10after from "../assets/projects/project10/project10after.jpg";
+//project 11
+import project11before from "../assets/projects/project11/project11before.jpg";
+import project11after from "../assets/projects/project11/project11after.jpg";
+//project 12
+import project12before from "../assets/projects/project12/project12before.jpg";
+import project12after from "../assets/projects/project12/project12after.jpg";
+//project 13
+import project13before from "../assets/projects/project13/project13before.jpg";
+import project13after from "../assets/projects/project13/project13after.jpg";
+//project 14
+import project14before from "../assets/projects/project14/project14before.jpg";
+import project14after from "../assets/projects/project14/project14after.jpg";
+//project 15
+import project15before from "../assets/projects/project15/project15before.jpg";
+import project15after from "../assets/projects/project15/project15after.jpg";
+//project 16
+import project16before from "../assets/projects/project16/project16before.jpg";
+import project16after from "../assets/projects/project16/project16after.jpg";
+//project 17
+import project17before from "../assets/projects/project17/project17before.jpg";
+import project17after from "../assets/projects/project17/project17after.jpg";
 //gallery pictures
 
 //project 1
@@ -21,8 +63,6 @@ import project1img7 from "../assets/projects/project1/gallery/7.jpg";
 import project1img8 from "../assets/projects/project1/gallery/8.jpg";
 import project1img9 from "../assets/projects/project1/gallery/9.jpg";
 import project1img10 from "../assets/projects/project1/gallery/10.jpg";
-import project1img11 from "../assets/projects/project1/gallery/11.jpg";
-import project1img12 from "../assets/projects/project1/gallery/12.jpg";
 //project 2
 import project2img1 from "../assets/projects/project2/gallery/1.jpg";
 import project2img2 from "../assets/projects/project2/gallery/2.jpg";
@@ -80,9 +120,6 @@ import project4img19 from "../assets/projects/project4/gallery/19.jpg";
 import project4img20 from "../assets/projects/project4/gallery/20.jpg";
 import project4img21 from "../assets/projects/project4/gallery/21.jpg";
 import project4img22 from "../assets/projects/project4/gallery/22.jpg";
-import project4img23 from "../assets/projects/project4/gallery/23.jpg";
-import project4img24 from "../assets/projects/project4/gallery/24.jpg";
-
 //project 5
 import project5img1 from "../assets/projects/project5/gallery/1.jpg";
 import project5img2 from "../assets/projects/project5/gallery/2.jpg";
@@ -104,9 +141,6 @@ import project5img17 from "../assets/projects/project5/gallery/17.jpg";
 import project5img18 from "../assets/projects/project5/gallery/18.jpg";
 import project5img19 from "../assets/projects/project5/gallery/19.jpg";
 import project5img20 from "../assets/projects/project5/gallery/20.jpg";
-import project5img21 from "../assets/projects/project5/gallery/21.jpg";
-import project5img22 from "../assets/projects/project5/gallery/22.jpg";
-
 //project 6
 import project6img1 from "../assets/projects/project6/gallery/1.jpg";
 import project6img2 from "../assets/projects/project6/gallery/2.jpg";
@@ -119,9 +153,6 @@ import project6img8 from "../assets/projects/project6/gallery/8.jpg";
 import project6img9 from "../assets/projects/project6/gallery/9.jpg";
 import project6img10 from "../assets/projects/project6/gallery/10.jpg";
 import project6img11 from "../assets/projects/project6/gallery/11.jpg";
-import project6img12 from "../assets/projects/project6/gallery/12.jpg";
-import project6img13 from "../assets/projects/project6/gallery/13.jpg";
-
 //project 7
 import project7img1 from "../assets/projects/project7/gallery/1.jpg";
 import project7img2 from "../assets/projects/project7/gallery/2.jpg";
@@ -141,9 +172,6 @@ import project7img15 from "../assets/projects/project7/gallery/15.jpg";
 import project7img16 from "../assets/projects/project7/gallery/16.jpg";
 import project7img17 from "../assets/projects/project7/gallery/17.jpg";
 import project7img18 from "../assets/projects/project7/gallery/18.jpg";
-import project7img19 from "../assets/projects/project7/gallery/19.jpg";
-import project7img20 from "../assets/projects/project7/gallery/20.jpg";
-
 //project 8
 import project8img1 from "../assets/projects/project8/gallery/1.jpg";
 import project8img2 from "../assets/projects/project8/gallery/2.jpg";
@@ -159,9 +187,6 @@ import project8img11 from "../assets/projects/project8/gallery/11.jpg";
 import project8img12 from "../assets/projects/project8/gallery/12.jpg";
 import project8img13 from "../assets/projects/project8/gallery/13.jpg";
 import project8img14 from "../assets/projects/project8/gallery/14.jpg";
-import project8img15 from "../assets/projects/project8/gallery/15.jpg";
-import project8img16 from "../assets/projects/project8/gallery/16.jpg";
-
 //project 9
 import project9img1 from "../assets/projects/project9/gallery/1.jpg";
 import project9img2 from "../assets/projects/project9/gallery/2.jpg";
@@ -186,9 +211,6 @@ import project9img20 from "../assets/projects/project9/gallery/20.jpg";
 import project9img21 from "../assets/projects/project9/gallery/21.jpg";
 import project9img22 from "../assets/projects/project9/gallery/22.jpg";
 import project9img23 from "../assets/projects/project9/gallery/23.jpg";
-import project9img24 from "../assets/projects/project9/gallery/24.jpg";
-import project9img25 from "../assets/projects/project9/gallery/25.jpg";
-
 //project 10
 import project10img1 from "../assets/projects/project10/gallery/1.jpg";
 import project10img2 from "../assets/projects/project10/gallery/2.jpg";
@@ -212,9 +234,6 @@ import project10img19 from "../assets/projects/project10/gallery/19.jpg";
 import project10img20 from "../assets/projects/project10/gallery/20.jpg";
 import project10img21 from "../assets/projects/project10/gallery/21.jpg";
 import project10img22 from "../assets/projects/project10/gallery/22.jpg";
-import project10img23 from "../assets/projects/project10/gallery/23.jpg";
-import project10img24 from "../assets/projects/project10/gallery/24.jpg";
-
 //project 11
 import project11img1 from "../assets/projects/project11/gallery/1.jpg";
 import project11img2 from "../assets/projects/project11/gallery/2.jpg";
@@ -235,9 +254,6 @@ import project11img16 from "../assets/projects/project11/gallery/16.jpg";
 import project11img17 from "../assets/projects/project11/gallery/17.jpg";
 import project11img18 from "../assets/projects/project11/gallery/18.jpg";
 import project11img19 from "../assets/projects/project11/gallery/19.jpg";
-import project11img20 from "../assets/projects/project11/gallery/20.jpg";
-import project11img21 from "../assets/projects/project11/gallery/21.jpg";
-
 //project 12
 import project12img1 from "../assets/projects/project12/gallery/1.jpg";
 import project12img2 from "../assets/projects/project12/gallery/2.jpg";
@@ -252,9 +268,6 @@ import project12img10 from "../assets/projects/project12/gallery/10.jpg";
 import project12img11 from "../assets/projects/project12/gallery/11.jpg";
 import project12img12 from "../assets/projects/project12/gallery/12.jpg";
 import project12img13 from "../assets/projects/project12/gallery/13.jpg";
-import project12img14 from "../assets/projects/project12/gallery/14.jpg";
-import project12img15 from "../assets/projects/project12/gallery/15.jpg";
-
 //project 13
 import project13img1 from "../assets/projects/project13/gallery/1.jpg";
 import project13img2 from "../assets/projects/project13/gallery/2.jpg";
@@ -271,18 +284,12 @@ import project13img12 from "../assets/projects/project13/gallery/12.jpg";
 import project13img13 from "../assets/projects/project13/gallery/13.jpg";
 import project13img14 from "../assets/projects/project13/gallery/14.jpg";
 import project13img15 from "../assets/projects/project13/gallery/15.jpg";
-import project13img16 from "../assets/projects/project13/gallery/16.jpg";
-import project13img17 from "../assets/projects/project13/gallery/17.jpg";
-
 //project 14
 import project14img1 from "../assets/projects/project14/gallery/1.jpg";
 import project14img2 from "../assets/projects/project14/gallery/2.jpg";
 import project14img3 from "../assets/projects/project14/gallery/3.jpg";
 import project14img4 from "../assets/projects/project14/gallery/4.jpg";
 import project14img5 from "../assets/projects/project14/gallery/5.jpg";
-import project14img6 from "../assets/projects/project14/gallery/6.jpg";
-import project14img7 from "../assets/projects/project14/gallery/7.jpg";
-
 //project 15
 import project15img1 from "../assets/projects/project15/gallery/1.jpg";
 import project15img2 from "../assets/projects/project15/gallery/2.jpg";
@@ -292,18 +299,12 @@ import project15img5 from "../assets/projects/project15/gallery/5.jpg";
 import project15img6 from "../assets/projects/project15/gallery/6.jpg";
 import project15img7 from "../assets/projects/project15/gallery/7.jpg";
 import project15img8 from "../assets/projects/project15/gallery/8.jpg";
-import project15img9 from "../assets/projects/project15/gallery/9.jpg";
-import project15img10 from "../assets/projects/project15/gallery/10.jpg";
-
 //project 16
 import project16img1 from "../assets/projects/project16/gallery/1.jpg";
 import project16img2 from "../assets/projects/project16/gallery/2.jpg";
 import project16img3 from "../assets/projects/project16/gallery/3.jpg";
 import project16img4 from "../assets/projects/project16/gallery/4.jpg";
 import project16img5 from "../assets/projects/project16/gallery/5.jpg";
-import project16img6 from "../assets/projects/project16/gallery/6.jpg";
-import project16img7 from "../assets/projects/project16/gallery/7.jpg";
-
 //project 17
 import project17img1 from "../assets/projects/project17/gallery/1.jpg";
 import project17img2 from "../assets/projects/project17/gallery/2.jpg";
@@ -318,8 +319,6 @@ import project17img10 from "../assets/projects/project17/gallery/10.jpg";
 import project17img11 from "../assets/projects/project17/gallery/11.jpg";
 import project17img12 from "../assets/projects/project17/gallery/12.jpg";
 import project17img13 from "../assets/projects/project17/gallery/13.jpg";
-import project17img14 from "../assets/projects/project17/gallery/14.jpg";
-import project17img15 from "../assets/projects/project17/gallery/15.jpg";
 
 export const projects = [
   {
@@ -331,7 +330,8 @@ export const projects = [
     roi: 6.5,
     before: project1before,
     after: project1after,
-    description: "תיאור הפרויקט + תחשבו האם להוסיף / לשנות נתונים",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
     gallery: [
       project1after,
       project1before,
@@ -345,8 +345,6 @@ export const projects = [
       project1img8,
       project1img9,
       project1img10,
-      project1img11,
-      project1img12,
     ],
   },
   {
@@ -358,7 +356,8 @@ export const projects = [
     roi: 5.5,
     before: project2before,
     after: project2after,
-    description: "lorem ipsum ...",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
     gallery: [
       project2after,
       project2before,
@@ -384,7 +383,8 @@ export const projects = [
     roi: 6.5,
     before: project3before,
     after: project3after,
-    description: "lorem ipsum ...",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
     gallery: [
       project3after,
       project3before,
@@ -418,9 +418,9 @@ export const projects = [
     squareMeters: 60,
     time: "2 חודשים",
     roi: 6.5,
-    before: project3before,
-    after: project3after,
-    description: "lorem ipsum ...",
+    before: project4before,
+    after: project4after,
+    description: "שימו לב יש תמונות רק של אחרי",
     gallery: [
       project4img1,
       project4img2,
@@ -444,8 +444,6 @@ export const projects = [
       project4img20,
       project4img21,
       project4img22,
-      project4img23,
-      project4img24,
     ],
   },
   {
@@ -455,9 +453,10 @@ export const projects = [
     squareMeters: 60,
     time: "2 חודשים",
     roi: 6.5,
-    before: project3before,
-    after: project3after,
-    description: "lorem ipsum ...",
+    before: project5before,
+    after: project5after,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
     gallery: [
       project5img1,
       project5img2,
@@ -479,8 +478,6 @@ export const projects = [
       project5img18,
       project5img19,
       project5img20,
-      project5img21,
-      project5img22,
     ],
   },
   {
@@ -490,9 +487,10 @@ export const projects = [
     squareMeters: 60,
     time: "2 חודשים",
     roi: 6.5,
-    before: project3before,
-    after: project3after,
-    description: "lorem ipsum ...",
+    before: project6before,
+    after: project6after,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
     gallery: [
       project6img1,
       project6img2,
@@ -505,8 +503,6 @@ export const projects = [
       project6img9,
       project6img10,
       project6img11,
-      project6img12,
-      project6img13,
     ],
   },
   {
@@ -516,12 +512,11 @@ export const projects = [
     squareMeters: 60,
     time: "2 חודשים",
     roi: 6.5,
-    before: project3before,
-    after: project3after,
-    description: "lorem ipsum ...",
+    before: project7before,
+    after: project7after,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
     gallery: [
-      project7img19,
-      project7img20,
       project7img1,
       project7img2,
       project7img3,
@@ -549,11 +544,11 @@ export const projects = [
     squareMeters: 60,
     time: "2 חודשים",
     roi: 6.5,
-    before: project3before,
-    after: project3after,
-    description: "lorem ipsum ...",
+    before: project8before,
+    after: project8after,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
     gallery: [
-      project8img15,
       project8img1,
       project8img2,
       project8img3,
@@ -568,7 +563,6 @@ export const projects = [
       project8img12,
       project8img13,
       project8img14,
-      project8img16,
     ],
   },
   {
@@ -578,9 +572,10 @@ export const projects = [
     squareMeters: 60,
     time: "2 חודשים",
     roi: 6.5,
-    before: project3before,
-    after: project3after,
-    description: "lorem ipsum ...",
+    before: project9before,
+    after: project9after,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
     gallery: [
       project9img1,
       project9img2,
@@ -605,8 +600,6 @@ export const projects = [
       project9img21,
       project9img22,
       project9img23,
-      project9img24,
-      project9img25,
     ],
   },
   {
@@ -616,9 +609,10 @@ export const projects = [
     squareMeters: 60,
     time: "2 חודשים",
     roi: 6.5,
-    before: project3before,
-    after: project3after,
-    description: "lorem ipsum ...",
+    before: project10before,
+    after: project10after,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
     gallery: [
       project10img2,
       project10img1,
@@ -642,8 +636,6 @@ export const projects = [
       project10img20,
       project10img21,
       project10img22,
-      project10img23,
-      project10img24,
     ],
   },
   {
@@ -653,9 +645,10 @@ export const projects = [
     squareMeters: 60,
     time: "2 חודשים",
     roi: 6.5,
-    before: project3before,
-    after: project3after,
-    description: "lorem ipsum ...",
+    before: project11before,
+    after: project11after,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
     gallery: [
       project11img17,
       project11img1,
@@ -676,8 +669,6 @@ export const projects = [
       project11img16,
       project11img18,
       project11img19,
-      project11img20,
-      project11img21,
     ],
   },
   {
@@ -687,9 +678,10 @@ export const projects = [
     squareMeters: 60,
     time: "2 חודשים",
     roi: 6.5,
-    before: project3before,
-    after: project3after,
-    description: "lorem ipsum ...",
+    before: project12before,
+    after: project12after,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
     gallery: [
       project12img1,
       project12img2,
@@ -704,8 +696,6 @@ export const projects = [
       project12img11,
       project12img12,
       project12img13,
-      project12img14,
-      project12img15,
     ],
   },
   {
@@ -715,11 +705,11 @@ export const projects = [
     squareMeters: 60,
     time: "2 חודשים",
     roi: 6.5,
-    before: project3before,
-    after: project3after,
-    description: "lorem ipsum ...",
+    before: project13before,
+    after: project13after,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
     gallery: [
-      project13img15,
       project13img1,
       project13img2,
       project13img3,
@@ -734,8 +724,7 @@ export const projects = [
       project13img12,
       project13img13,
       project13img14,
-      project13img16,
-      project13img17,
+      project13img15,
     ],
   },
   {
@@ -745,17 +734,16 @@ export const projects = [
     squareMeters: 60,
     time: "2 חודשים",
     roi: 6.5,
-    before: project3before,
-    after: project3after,
-    description: "lorem ipsum ...",
+    before: project14before,
+    after: project14after,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
     gallery: [
       project14img1,
       project14img2,
       project14img3,
       project14img4,
       project14img5,
-      project14img6,
-      project14img7,
     ],
   },
   {
@@ -765,9 +753,10 @@ export const projects = [
     squareMeters: 60,
     time: "2 חודשים",
     roi: 6.5,
-    before: project3before,
-    after: project3after,
-    description: "lorem ipsum ...",
+    before: project15before,
+    after: project15after,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
     gallery: [
       project15img1,
       project15img2,
@@ -777,8 +766,6 @@ export const projects = [
       project15img6,
       project15img7,
       project15img8,
-      project15img9,
-      project15img10,
     ],
   },
   {
@@ -788,17 +775,16 @@ export const projects = [
     squareMeters: 60,
     time: "2 חודשים",
     roi: 6.5,
-    before: project3before,
-    after: project3after,
-    description: "lorem ipsum ...",
+    before: project16before,
+    after: project16after,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
     gallery: [
       project16img1,
       project16img2,
       project16img3,
       project16img4,
       project16img5,
-      project16img6,
-      project16img7,
     ],
   },
   {
@@ -808,11 +794,11 @@ export const projects = [
     squareMeters: 60,
     time: "2 חודשים",
     roi: 6.5,
-    before: project3before,
-    after: project3after,
-    description: "lorem ipsum ...",
+    before: project17before,
+    after: project17after,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
     gallery: [
-      project17img10,
       project17img1,
       project17img2,
       project17img3,
@@ -822,11 +808,10 @@ export const projects = [
       project17img7,
       project17img8,
       project17img9,
+      project17img10,
       project17img11,
       project17img12,
       project17img13,
-      project17img14,
-      project17img15,
     ],
   },
 ];

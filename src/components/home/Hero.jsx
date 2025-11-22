@@ -16,24 +16,18 @@ function Hero() {
           </div>
         </div>
 
-        {/* שכבת ה-overlay עכשיו משתמשת ב-flex-col ו-justify-between
-            כדי למקם את התוכן הראשי (h1) למעלה, ואת הכפתור למטה. */}
         <div className="absolute inset-0 flex flex-col justify-between items-center p-4 bg-black/30">
-          {/* DIV חדש לתוכן הראשי - יתרכז אוטומטית למעלה על ידי justify-between */}
           <div className="flex flex-col items-center justify-center flex-grow">
             <h1 className="mt-8 text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight drop-shadow-md">
               להיות בעלים של הדירה הכי יפה ברחוב, שמכניסה הכי הרבה,
               <br />
               <span className="bg-gradient-to-r from-purple-400 to-purple-200 bg-clip-text text-transparent">
-                ולהנות מהדרך זה קל!{" "}
+                ולהנות מהדרך זה קל!
               </span>
             </h1>
           </div>
 
-          {/* הכפתור - יידחף לתחתית על ידי justify-between */}
           <NavLink to="/contact" className="mb-4">
-            {" "}
-            {/* הוספנו mb-4 למרווח קטן */}
             <Button
               className="px-8 md:px-10 py-3 md:py-4 text-base md:text-lg 
                          bg-white/20 backdrop-blur-xs text-neutral-800 

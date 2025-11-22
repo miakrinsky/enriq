@@ -116,7 +116,7 @@ function Services() {
       </div>
 
       {/* CTA Section */}
-      <div
+      {/* <div
         className={`text-center bg-gradient-to-r from-purple-50 to-neutral-50 p-8 md:p-12 rounded-2xl mx-4 ${
           isVisible ? "animate-fade-in-delayed" : "opacity-0"
         }`}
@@ -136,7 +136,7 @@ function Services() {
             דברו איתנו עכשיו
           </Button>
         </NavLink>
-      </div>
+      </div> */}
 
       <style jsx>{`
         @keyframes slideUp {
