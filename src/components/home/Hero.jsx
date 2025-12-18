@@ -9,8 +9,9 @@ function Hero() {
         <div className="relative group">
           <div className="relative rounded-2xl flex items-center justify-center overflow-hidden">
             <img
+              // FIXED: Reduced static height for better desktop scaling
               src={hero}
-              className="w-full h-[555px] object-cover"
+              className="w-full h-[450px] md:h-[450px] lg:h-[480px] object-cover"
               alt="Hero Background"
             />
           </div>
@@ -18,7 +19,7 @@ function Hero() {
 
         <div className="absolute inset-0 flex flex-col justify-between items-center p-4 bg-black/30">
           <div className="flex flex-col items-center justify-center flex-grow">
-            <h1 className="mt-8 text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight drop-shadow-md">
+            <h1 className="mt-8 text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight drop-shadow-md">
               להיות בעלים של הדירה הכי יפה ברחוב, שמכניסה הכי הרבה,
               <br />
               <span className="bg-gradient-to-r from-purple-400 to-purple-200 bg-clip-text text-transparent">
@@ -41,7 +42,7 @@ function Hero() {
         </div>
       </div>
 
-      <p className="text-lg sm:text-xl md:text-2xl text-neutral-600 mt-10 md:mt-12 max-w-3xl mx-auto leading-relaxed px-2">
+      <p className="text-lg sm:text-xl md:text-xl text-neutral-600 mt-8 md:mt-10 max-w-3xl mx-auto leading-relaxed px-2">
         אנחנו מתמחים בדירות להשקעה, שיפוצים מיוחדים ומדוייקים וליווי מלא לאורך
         כל הדרך!
       </p>

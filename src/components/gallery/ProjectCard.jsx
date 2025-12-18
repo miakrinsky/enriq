@@ -11,12 +11,13 @@ function ProjectCard({ project, compact = false, onOpenModal }) {
       <div className="group relative overflow-hidden rounded-2xl shadow-2xl transition-all duration-300 hover:shadow-3xl">
         <div className="relative">
           <ReactCompareSlider
-            itemOne={
+            itemOne={<ReactCompareSliderImage src={project.after} alt="אחרי" />}
+            itemTwo={
               <ReactCompareSliderImage src={project.before} alt="לפני" />
             }
-            itemTwo={<ReactCompareSliderImage src={project.after} alt="אחרי" />}
             position={50}
-            style={{ height: "350px" }}
+            // Retaining the reduced height for better mobile fit
+            style={{ height: "300px" }}
             className="rounded-t-2xl"
           />
 
@@ -31,24 +32,40 @@ function ProjectCard({ project, compact = false, onOpenModal }) {
 
         {/* Glassmorphism card bottom */}
         <div className="relative bg-gradient-to-br from-neutral-900/95 to-neutral-800/95 backdrop-blur-xl p-4 border-t border-white/10">
-          <h3
-            className="text-xl font-bold text-white mb-3 tracking-tight"
-            style={{ fontFamily: "'Heebo', sans-serif" }}
-          >
-            רחוב {project.street}
-          </h3>
+          {/* FIXED: Combined H3 and info line into a single flex container for maximum space saving */}
+          <div className="flex items-center justify-between gap-2 mb-3">
+            {/* H3 for Street Name */}
+            <h3
+              className="text-xl font-bold text-white tracking-tight flex-shrink-0"
+              style={{ fontFamily: "'Heebo', sans-serif" }}
+            >
+              רחוב {project.street}
+            </h3>
 
-          <div className="flex items-center gap-4 text-sm text-white/80 mb-4">
-            <div className="flex items-center gap-1.5">
-              <Door size={16} weight="duotone" className="text-purple-400" />
-              <span>{project.rooms} חדרים</span>
-            </div>
-            <div className="w-1 h-1 bg-white/40 rounded-full"></div>
-            <div className="flex items-center gap-1.5">
-              <Ruler size={16} weight="duotone" className="text-purple-400" />
-              <span>{project.squareMeters} מ"ר</span>
+            {/* Compact Info Badges - Forced small font and flex-wrap prevention */}
+            <div className="flex items-center gap-1.5 text-xs text-white/80 flex-shrink overflow-hidden">
+              <div className="flex items-center gap-1 whitespace-nowrap">
+                <Door
+                  size={12}
+                  weight="duotone"
+                  className="text-purple-400 flex-shrink-0"
+                />
+                <span>{project.rooms} חדרים</span>
+              </div>
+
+              <div className="w-0.5 h-3 bg-white/40 rounded-full flex-shrink-0"></div>
+
+              <div className="flex items-center gap-1 whitespace-nowrap">
+                <Ruler
+                  size={12}
+                  weight="duotone"
+                  className="text-purple-400 flex-shrink-0"
+                />
+                <span>{project.squareMeters} מ"ר</span>
+              </div>
             </div>
           </div>
+          {/* END FIXED SECTION */}
 
           <div className="flex items-center justify-center gap-2 text-purple-300 text-sm font-semibold group-hover:gap-3 transition-all bg-purple-600/20 py-2 rounded-lg border border-purple-400/30">
             <span> מידע נוסף על הפרויקט</span>

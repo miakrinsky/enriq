@@ -62,15 +62,17 @@ function TrustIndicators() {
   ];
 
   return (
-    <div ref={sectionRef} className="py-12 md:py-16 overflow-hidden">
+    <div ref={sectionRef} className=" py-12 md:py-16 overflow-hidden">
       <h2
-        className={`text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 text-center mb-12 md:mb-20 ${
+        // FIXED: Reduced desktop font size for H2 (md:text-4xl) and adjusted bottom margin
+        className={`text-3xl sm:text-4xl md:text-4xl font-bold text-neutral-900 text-center mb-10 md:mb-16 ${
           isVisible ? "animate-fade-in" : "opacity-0"
         }`}
       >
         למה משקיעים בוחרים בנו?
       </h2>
 
+      {/* Grid structure remains optimized for mobile and scales up */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
         {indicators.map((item, index) => (
           <div
@@ -94,13 +96,13 @@ function TrustIndicators() {
             </div>
 
             {/* Title with underline effect */}
-            <h3 className="text-xl md:text-2xl font-bold text-neutral-900 mb-3 md:mb-4 relative inline-block">
+            <h3 className="text-xl md:text-xl font-bold text-neutral-900 mb-3 md:mb-4 relative inline-block">
               <span className="relative z-10">{item.title}</span>
               <div className="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-l from-purple-600 to-purple-400 group-hover:w-full transition-all duration-500 ease-out"></div>
             </h3>
 
-            {/* Description */}
-            <p className="text-neutral-600 leading-relaxed text-lg md:text-base px-2 group-hover:text-neutral-700 transition-colors duration-300">
+            {/* FIXED: Ensure text is readable (text-base) on mobile */}
+            <p className="text-neutral-600 leading-relaxed text-base md:text-base px-2 group-hover:text-neutral-700 transition-colors duration-300">
               {item.description}
             </p>
 

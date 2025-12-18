@@ -324,14 +324,17 @@ export const projects = [
   {
     id: 1,
     street: " סוקולוב",
-    rooms: 3,
-    squareMeters: 60,
+    rooms: 1.5,
+    squareMeters: 45,
     time: "חודשיים",
     roi: 6.5,
     before: project1before,
     after: project1after,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
+    description: `יחידה גדולה מדירה שחולקה ל-2,
+הוחלפו כל התשתיות וכל הסנטריה.
+בוצעו שימור ושחזור של ריצוף אותנטי מקורי, חלוקת החלל ל"חדר שינה" באמצעות מחיצה דקורטיבית עם מידוף משני צדדיה כדי ליצור תחושת מרחב מואר ומאוורר, תוך שמירה על פרטיות והפרדה לאזור השינה.
+שילוב אלמטנים צבעוניים ושמחים בעיצוב כדי למשוך קהל שוכרים צעיר ומתאים לאזור.
+הושכרה לפני סיום השיפוץ.`,
     gallery: [
       project1after,
       project1before,
@@ -350,14 +353,17 @@ export const projects = [
   {
     id: 2,
     street: " החלוץ",
-    rooms: 1.5,
-    squareMeters: 60,
+    rooms: 1,
+    squareMeters: 30,
     time: "3 חודשים",
     roi: 5.5,
     before: project2before,
     after: project2after,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
+    description: `דירת חדר עם כניסה פרטית ומרפסת.
+בוצעו פירוק הנמכת התקרה ובניית חלל גלריה מעץ מעל לשירותים והמקלחת על מנת לנצל את התקרה הגבוהה ולהרוויח חלל מגורים רחב יותר, והפרדה לאזור שינה, בנוסף לבניית מרפסת דק בגודל של כ-25 מטרים בכניסה לדירה, על מנת להשיג חלל אירוח רחב, תוך כדי ניצול שטח מת.
+השיפוץ נעשה תוך שימור חלונות עץ מקוריים.
+קו העיצוב נקי, אך צבעוני ונעים כדי למשוך שוכרים צעירים.
+הושכרה לפני סיום השיפוץ.`,
     gallery: [
       project2after,
       project2before,
@@ -378,13 +384,15 @@ export const projects = [
     id: 3,
     street: " לוד",
     rooms: 3,
-    squareMeters: 60,
+    squareMeters: 80,
     time: "2 חודשים",
     roi: 6.5,
     before: project3before,
     after: project3after,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
+    description: `ביצענו שיפוץ מלא והחלפת כל התשתיות, סנטריה ומטבח תוך שמירה מוקפדת ושחזור אלמנטים אותנטיים - רצפות, דלתות , חלונות ותריסי עץ.
+שברנו קירות פנים לחיבור חללים, והגדלת תחושת המרחב.
+בחרנו בעיצוב חמים ונאמן למקור, תוך מחשבה על הפרטים הקטנים לחוויית מגורים מודרנית ונוחה בדירה עתיקה.
+הדירה הושכרה זמן קצר לאחר סיום השיפוץ, ונמכרה כשנה וחצי לאחריו ב-50% עליית ערך(!!).`,
     gallery: [
       project3after,
       project3before,
@@ -414,13 +422,19 @@ export const projects = [
   {
     id: 4,
     street: "מסדה",
-    rooms: 3,
-    squareMeters: 60,
+    rooms: 2.5,
+    squareMeters: 75,
     time: "2 חודשים",
     roi: 6.5,
     before: project4before,
     after: project4after,
-    description: "שימו לב יש תמונות רק של אחרי",
+    description: `בוצע שיפוץ מלא, הכולל החלפת התשתיות, סנטריה ומטבח במלואם.
+הריסת קירות פנים ופתיחה של חלל המטבח לסלון על מנת להגדיל את מרחב המחייה ותחושת הגודל.
+נוסף לשבירת קיר של חצי החדר והחלפתו בקיר ודלת זכוכית לסגירת פינת עבודה קטנה, אך לא "חונקת".
+פתחנו את החלון המקורי שנאטם בסלון והחלפנו את כל החלונות, למעט חלונות העץ המקוריים אשר עברו שימור.
+כל השיפוץ בוצע תוך שימור רצפת הטראצו המקורית.
+שמרנו על רמת שיפוץ גבוהה ומפנקת במטרה למשוך שוכרים "מיושבים" יותר.
+הדירה הושכרה מיד לאחר השיפוץ.`,
     gallery: [
       project4img1,
       project4img2,
@@ -449,14 +463,16 @@ export const projects = [
   {
     id: 5,
     street: "החלוץ",
-    rooms: 3,
-    squareMeters: 60,
+    rooms: 2,
+    squareMeters: 50,
     time: "2 חודשים",
     roi: 6.5,
     before: project5before,
     after: project5after,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
+    description: `ביצענו שיפוץ קוסמטי מלא (ללא החלפת תשתיות מלאה). בדגש על תחושת מרחב והכנסת אור ואוויר לדירה - הרחבנו את חלון המטבח למקסימום, החלפנו את הקיר הסגור בקיר זכוכית אטומה.
+חידשנו את המטבח וחדר השירותים והמקלחת, התקנו פרקט וגופי תאורה חדשים. 
+בחרנו בעיצוב נקי וחמים עם צבעוניות קלה למשיכת שוכרים צעירים. 
+הושכרה לזוג מיד לאחר סיום השיפוץ.`,
     gallery: [
       project5img1,
       project5img2,
@@ -483,14 +499,18 @@ export const projects = [
   {
     id: 6,
     street: "סוקולוב",
-    rooms: 3,
-    squareMeters: 60,
+    rooms: 1,
+    squareMeters: 30,
     time: "2 חודשים",
     roi: 6.5,
     before: project6before,
     after: project6after,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
+    description: `יחידה קטנה מדירה שחולקה ל-2,
+כל התשתיות, הסנטריה והמטבח נעשו מחדש.
+דירת סטודיו קטנה, בה הושקעה מחשבה רבה על שמירת נוחות מרבית ופרקטיות.
+חלל שירותים ומקלחת מרווחים ונעימים נבנה, ומעליו קומת גלריה מעץ לאזור שינה ואחסון. מתחת לגלריה חלל אחסון נוסף מובנה, ופינת עבודה / לימודים.
+סלון נעים ומטבח עם בר ישיבה / עבודה דו כיווני לניצול מקסימלי של החלל.
+קו עיצובי צבעוני ושמח למשיכת קהל שוכרים צעיר. הושכרה מיד לאחר סיום השיפוץ.`,
     gallery: [
       project6img1,
       project6img2,
@@ -514,8 +534,15 @@ export const projects = [
     roi: 6.5,
     before: project7before,
     after: project7after,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
+    description: `ביצענו חלוקה ל-2 יחידות של 2 חדרים כל אחת.
+לפני השיפוץ הייתה דירת ירושה מוזנחת וישנה.
+הדירה עברה שיפוץ כללי כולל החלפת כל התשתיות - סנטריה ומטבח חדשים. 
+החלפנו גם גופי תאורה ואבזור בסיסי.
+בחרנו לשים דגש על חללים פתוחים והרגשת מרחב מרווח, מואר ומאוורר. 
+שמרנו על חלונות ודלתות העץ המקוריים, ארון קיר מקורי ענק ורצפת טראצו.
+העיצוב שבחרנו הוא בסגנון וינטג' מודרני, אך לא מתפשר על נוחות ופרקטיות. 
+שתי היחידות הושכרו מיד לאחר סיום השיפוץ.`,
+
     gallery: [
       project7img1,
       project7img2,
@@ -540,14 +567,21 @@ export const projects = [
   {
     id: 8,
     street: "יוסף",
-    rooms: 3,
-    squareMeters: 60,
+    rooms: 2,
+    squareMeters: 40,
     time: "2 חודשים",
     roi: 6.5,
     before: project8before,
     after: project8after,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
+    description: `ביצענו חלוקה ל-2 יחידות של 2 חדרים כל אחת.
+לפני השיפוץ הייתה דירת ירושה מוזנחת וישנה.
+הדירה עברה שיפוץ כללי כולל החלפת כל התשתיות - סנטריה ומטבח חדשים. 
+החלפנו גם גופי תאורה ואבזור בסיסי.
+בחרנו לשים דגש על חללים פתוחים והרגשת מרחב מרווח, מואר ומאוורר. 
+שמרנו על חלונות ודלתות העץ המקוריים, ארון קיר מקורי ענק ורצפת טראצו.
+העיצוב שבחרנו הוא בסגנון וינטג' מודרני, אך לא מתפשר על נוחות ופרקטיות. 
+שתי היחידות הושכרו מיד לאחר סיום השיפוץ.`,
+
     gallery: [
       project8img1,
       project8img2,
@@ -569,13 +603,14 @@ export const projects = [
     id: 9,
     street: "חברון",
     rooms: 3,
-    squareMeters: 60,
+    squareMeters: 75,
     time: "2 חודשים",
     roi: 6.5,
     before: project9before,
     after: project9after,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
+    description: `קיבלנו לשיפוץ דירה גדולה ומרווחת אך קצת "עצובה". שברנו בה קיר אחד בין חלל הסלון למטבח, החלפנו את כל התשתיות לחדשות כולל סנטריה ומטבח.
+החלפנו גופי תאורה ואבזור בסיסי.
+כאן בחרנו בעיצוב ותכנון לנוחות מקסימלית והרגשה פתוחה, נקייה וחמימה.`,
     gallery: [
       project9img1,
       project9img2,
@@ -605,14 +640,17 @@ export const projects = [
   {
     id: 10,
     street: "בלפור",
-    rooms: 3,
+    rooms: 2.5,
     squareMeters: 60,
     time: "2 חודשים",
     roi: 6.5,
     before: project10before,
     after: project10after,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
+    description: `דירת 2.5 חד' קלאסית של הדר, בעלת מבנה מעולה, ככה שלא שינינו אותו - רק החזרנו אותה לחיים!
+החלפנו תשתיות, סנטריה חשמל ומטבח חדשים. התקנו פרקט וגופי תאורה חדשים, וריהטנו חלקית. 
+סגרנו מרפסת פתוחה בחלונות אלומיניום כדי "להכניס" עוד חלל לבית אבל גם בלי לוותר על המרפסת.
+בחרנו בעיצוב מינימליסטי ושקט.`,
+
     gallery: [
       project10img2,
       project10img1,
@@ -641,14 +679,20 @@ export const projects = [
   {
     id: 11,
     street: "ירושלים",
-    rooms: 3,
-    squareMeters: 60,
+    rooms: 3.5,
+    squareMeters: 90,
     time: "2 חודשים",
     roi: 6.5,
     before: project11before,
     after: project11after,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
+    description: `דירה שעמדה ריקה ומוזנחת במשך שנים. עברה שיפוץ תשתיות כללי כולל מטבח חדש גדול ומפנק וסנטריה.
+שברנו קיר חוצץ מסדרון, לפתיחת החלל המרכזי.
+העברנו את המטבח מתוך חדר נפרד אל תוך החלל המרכזי, בזכות זה המטבח הרבה יותר מרווח לאחר השיפוץ וגם נוסף חדר שינה שלא היה לפני כן.
+סגרנו את חצי החדר שמשמש כפינת עבודה בקיר זכוכית לשמירה על תחושת הגודל והמרחב.
+החלפנו חלונות מאלומיניום ישן לחלונות עם פרופיל בלגי מודרני.
+במקום דירת 2.5 חדרים עם חללים מבוזבזים, קיבלנו דירת 3.5 חדרים ענקית, מרווחת ומפנקת.
+בחרנו ללכת על סגנון עיצוב חם, אך פרקטי מאוד ומינימלי.`,
+
     gallery: [
       project11img17,
       project11img1,
@@ -674,14 +718,16 @@ export const projects = [
   {
     id: 12,
     street: "נורדאו",
-    rooms: 3,
-    squareMeters: 60,
+    rooms: 2.5,
+    squareMeters: 45,
     time: "2 חודשים",
     roi: 6.5,
     before: project12before,
     after: project12after,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
+    description: `ביצענו שיפוץ קוסמטי בסדר גודל בינוני הכולל הזזת המטבח ותשתיות מים וחשמל, כדי להרוויח חלל מרכזי נוח ופרקטי יותר.
+את חדר הרחצה בנינו מחדש לחלוטין, בין היתר נעשה בחדר הרחצה חיפוי טיח דקורטיבי על הקירות.
+צבענו והחלפנו תאורה בכל הבית.
+בחרנו בסגנון עיצוב צבעוני וצעיר והתאמנו ריהוט באותו הסגנון.`,
     gallery: [
       project12img1,
       project12img2,
@@ -701,14 +747,18 @@ export const projects = [
   {
     id: 13,
     street: "נורדאו",
-    rooms: 3,
-    squareMeters: 60,
+    rooms: 2,
+    squareMeters: 40,
     time: "2 חודשים",
     roi: 6.5,
     before: project13before,
     after: project13after,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
+    description: `הדירה עברה שיפוץ קוסמטי בינוני הכולל שדרוג המטבח, החלפת הקרמיקות ומידוף.
+בנינו אי ונישה למקרר על מנת להרחיב את המטבח. 
+בחדר הרחצה עשינו חיפוי בטיח טבעי, ובטון מוחלק.
+צבענו את כל הבית, והחלפנו את כלל גופי התאורה.
+בחרנו בסגנון עיצוב צבעוני וצעיר והתאמנו ריהוט באותו הסגנון.`,
+
     gallery: [
       project13img1,
       project13img2,
@@ -730,14 +780,15 @@ export const projects = [
   {
     id: 14,
     street: "חיים",
-    rooms: 3,
-    squareMeters: 60,
+    rooms: 2,
+    squareMeters: 50,
     time: "2 חודשים",
     roi: 6.5,
     before: project14before,
     after: project14after,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
+    description: `יחידה מדירה מחולקת, שעברה שיפוץ מלא והכנת תשתיות מ-0, למעט שירותים ומקלחת שהיו במצב מצויין.
+את מיקום המטבח החלפנו, ואת המיקום המקורי של המטבח הפכנו לחדר שינה, את המטבח העברנו לחלל המרכזי.
+כאן בחרנו בעיצוב צעיר ופשוט.`,
     gallery: [
       project14img1,
       project14img2,
@@ -749,14 +800,16 @@ export const projects = [
   {
     id: 15,
     street: "נורדאו",
-    rooms: 3,
-    squareMeters: 60,
+    rooms: 2,
+    squareMeters: 50,
     time: "2 חודשים",
     roi: 6.5,
     before: project15before,
     after: project15after,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
+    description: `בדירה בוצע שיפוץ קוסמטי קל, מבחינת תשתיות הדירה הייתה במצב טוב, אך רצינו לשדרג אותה במהירות ובזול, ולהפוך אותה ליותר אטרקטיבית.
+חידשנו את המטבח, צבענו מחדש, החלפנו גופי תאורה, התקנו מדפים, חידשנו גם את הקרמיקות והברז , בנוסף לסגירת נישת מדפים פרקטית.
+בחדר הרחצה ביצענו צביעה אריחי קרמיקה בצבע ייעודי, החלפנו ברזים ואת ארונית הכיור.
+כך בזמן קצר ותקציב נמוך השגנו שדרוג משמעותי.`,
     gallery: [
       project15img1,
       project15img2,
@@ -771,14 +824,17 @@ export const projects = [
   {
     id: 16,
     street: "חיים",
-    rooms: 3,
-    squareMeters: 60,
+    rooms: 1,
+    squareMeters: 30,
     time: "2 חודשים",
     roi: 6.5,
     before: project16before,
     after: project16after,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
+    description: `יחידה מדירה מחולקת, שעברה שיפוץ מלא והכנת כל התשתיות מ-0. 
+סגרנו את חדר הרחצה והמטבח במרפסת סגורה, על מנת ליצור הפרדה מהחלל המרכזי בדירה.
+בנינו גלריית שינה מעץ בחלל המרכזי בדירה, לניצול מירבי של החלל.
+כאן בחרנו עיצוב צעיר ופרקטי במיוחד.`,
+
     gallery: [
       project16img1,
       project16img2,
@@ -790,14 +846,17 @@ export const projects = [
   {
     id: 17,
     street: "יוסף",
-    rooms: 3,
+    rooms: 2.5,
     squareMeters: 60,
     time: "2 חודשים",
     roi: 6.5,
     before: project17before,
     after: project17after,
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis feugiat libero, nec laoreet nisi. Duis vel velit et justo tincidunt faucibus. Integer eget efficitur dui. Nam feugiat at nulla nec pellentesque. In tincidunt fringilla neque a tempus. Duis nec porttitor lacus. Nulla dui lacus, molestie vitae luctus ac, venenatis.",
+    description: `הדירה עברה שיפוץ מלא הכולל החלפת כל התשתיות. 
+השיפוץ נעשה תוך שמירה על המבנה המקורי ללא הריסת קירות ושמירה על הריצוף המקורי.
+החלפנו את המטבח, השירותים והמקלחת במלואם. 
+סגרנו את שתי המרפסות בחלונות אלומיניום, החלפנו את גופי התאורה וצבענו את כל הדירה.
+כאן בחרנו עיצוב אקלקטי, צבעוני ומיוחד.`,
     gallery: [
       project17img1,
       project17img2,

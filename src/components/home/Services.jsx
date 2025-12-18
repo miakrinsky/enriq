@@ -67,7 +67,8 @@ function Services() {
   return (
     <div ref={sectionRef} className="py-12 md:py-16 overflow-hidden">
       <h2
-        className={`text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 text-center mb-12 md:mb-20 ${
+        // FIXED: Reduced desktop font size for H2 (md:text-4xl) and adjusted bottom margin
+        className={`text-3xl sm:text-4xl md:text-4xl font-bold text-neutral-900 text-center mb-10 md:mb-16 ${
           isVisible ? "animate-fade-in" : "opacity-0"
         }`}
       >
@@ -99,13 +100,13 @@ function Services() {
             </div>
 
             {/* Title with underline effect */}
-            <h3 className="text-xl md:text-2xl font-bold text-neutral-900 mb-3 md:mb-4 relative inline-block">
+            <h3 className="text-xl md:text-xl font-bold text-neutral-900 mb-3 md:mb-4 relative inline-block">
               <span className="relative z-10">{service.title}</span>
               <div className="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-l from-purple-600 to-purple-400 group-hover:w-full transition-all duration-500 ease-out"></div>
             </h3>
 
-            {/* Description */}
-            <p className="text-neutral-600 leading-relaxed text-lg md:text-base px-2 group-hover:text-neutral-700 transition-colors duration-300 max-w-2xl mx-auto">
+            {/* FIXED: Ensure text is readable (text-base) on mobile */}
+            <p className="text-neutral-600 leading-relaxed text-base md:text-base px-2 group-hover:text-neutral-700 transition-colors duration-300 max-w-2xl mx-auto">
               {service.description}
             </p>
 
@@ -114,29 +115,6 @@ function Services() {
           </div>
         ))}
       </div>
-
-      {/* CTA Section */}
-      {/* <div
-        className={`text-center bg-gradient-to-r from-purple-50 to-neutral-50 p-8 md:p-12 rounded-2xl mx-4 ${
-          isVisible ? "animate-fade-in-delayed" : "opacity-0"
-        }`}
-        style={{
-          animationDelay: isVisible && isMobile ? "750ms" : "0ms",
-          animationFillMode: "forwards",
-        }}
-      >
-        <h3 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-3 md:mb-4 px-4">
-          מוכנים להתחיל את ההשקעה הבאה שלכם?
-        </h3>
-        <p className="text-neutral-600 mb-6 md:mb-8 text-base md:text-lg px-4">
-          נשמח לשמוע על הפרויקט שלכם ולעזור להפוך אותו למציאות
-        </p>
-        <NavLink to="/contact">
-          <Button className="px-8 md:px-10 py-3 md:py-4 text-base md:text-lg transform hover:scale-105 transition-transform duration-200 shadow-lg">
-            דברו איתנו עכשיו
-          </Button>
-        </NavLink>
-      </div> */}
 
       <style jsx>{`
         @keyframes slideUp {

@@ -1,4 +1,5 @@
 import Section from "../components/ui/Section";
+import article from "../assets/article.png";
 import {
   MagnifyingGlass,
   Briefcase,
@@ -98,29 +99,31 @@ function About() {
     <>
       <Section>
         <div className="max-w-4xl mx-auto text-center px-4">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-neutral-900 mb-6 md:mb-8">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-6 md:mb-8">
             קצת עלינו
           </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-purple-600 to-purple-400 mx-auto mb-6 md:mb-8"></div>
+          <div className="w-20 h-1 bg-gradient-to-r from-purple-600 to-purple-400 mx-auto mb-6 md:mb-8"></div>
         </div>
       </Section>
 
       <Section bg="gray">
         <div className="max-w-5xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
+            {/* Image Block: Made the height consistent but manageable on mobile */}
             <div>
-              <div className="bg-gradient-to-br from-purple-100 to-neutral-200 rounded-2xl h-64 md:h-96 flex items-center justify-center shadow-lg">
-                <p className="text-neutral-400 text-base md:text-lg">
+              <div className="bg-gradient-to-br from-purple-100 to-neutral-200 rounded-xl h-60 md:h-96 flex items-center justify-center shadow-lg">
+                <p className="text-neutral-400 text-sm md:text-lg">
                   [תמונה של הצוות / המשרד]
                 </p>
               </div>
             </div>
 
+            {/* Text Block: Centered H2 title for mobile */}
             <div className="space-y-4 md:space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4 md:mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-2 md:mb-6 text-center md:text-right">
                 מי אנחנו?
               </h2>
-              <div className="space-y-4 md:space-y-6 text-base md:text-lg text-neutral-700 leading-relaxed">
+              <div className="space-y-3 md:space-y-6 text-base text-neutral-700 leading-relaxed">
                 <p>
                   <span className="font-semibold text-purple-600">
                     Enriq Group
@@ -139,40 +142,52 @@ function About() {
         </div>
       </Section>
 
-      <Section>
-        <div className="max-w-4xl mx-auto text-center mb-8 md:mb-12 px-4">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-4 md:mb-6">
-            החזון שלנו
-          </h2>
-          <p className="text-lg sm:text-xl md:text-2xl text-neutral-600 leading-relaxed">
-            להפוך כל השקעה בנדל"ן למניבה, יציבה, ומשתלמת - תוך ליווי צמוד
-            ומקצועי של המשקיע בכל שלב
-          </p>
-        </div>
+      {/* SECTION: Press Coverage with Image Preview */}
+      <Section bg="gray">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <div className="relative">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 mb-8">
+              אנחנו עושים את מה שאנחנו אומרים
+            </h2>
 
-        <div className="relative max-w-3xl mx-auto px-4">
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-200 to-purple-100 rounded-3xl blur-2xl opacity-30"></div>
-          <div className="relative bg-gradient-to-br from-purple-50 to-white p-8 md:p-12 rounded-3xl shadow-xl border border-purple-100">
-            <div className="flex justify-center mb-4 md:mb-6">
-              <Trophy
-                size={56}
-                weight="duotone"
-                color="#9333ea"
-                className="md:w-16 md:h-16"
-              />
+            {/* Image Link Block */}
+            <div className="max-w-xl mx-auto">
+              <a
+                href="https://www.mako.co.il/living-architecture/local/Article-729cd589a460291026.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block relative rounded-xl overflow-hidden shadow-2xl transition-transform duration-300 hover:scale-[1.02] border-4 border-transparent hover:border-purple-600"
+                aria-label="קראו את הכתבה על השיפוץ במאקו"
+              >
+                <img
+                  src={article}
+                  alt="Preview image for Mako article about apartment renovation in Haifa"
+                  className="w-full h-auto object-cover"
+                />
+              </a>
+              {/* Text link wrapping the entire paragraph */}
+              <a
+                href="https://www.mako.co.il/living-architecture/local/Article-729cd589a460291026.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-sm sm:text-base text-neutral-600 mt-4 hover:text-purple-600 transition-colors duration-300"
+              >
+                <span className="font-semibold text-purple-600 hover:underline transition-colors duration-300">
+                  לחצו כאן
+                </span>{" "}
+                כדי לקרוא את הכתבה המלאה במאקו על שיפוץ דירת השקעה בחיפה.
+              </a>
             </div>
-            <p className="text-lg md:text-xl text-neutral-700 text-center leading-relaxed">
-              אנחנו לא רק מוכרים דירות או משפצים אותן - אנחנו בונים עתיד כלכלי
-              יציב עבור המשקיעים שלנו
-            </p>
+            {/* End Image Link Block */}
           </div>
         </div>
       </Section>
+      {/* END SECTION: Press Coverage with Image Preview */}
 
       <Section bg="gray">
         <div ref={valuesRef} className="max-w-6xl mx-auto px-4">
           <h2
-            className={`text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 text-center mb-10 md:mb-12 ${
+            className={`text-3xl sm:text-4xl md:text-5xl font-bold text-neutral-900 text-center mb-8 md:mb-12 ${
               valuesVisible ? "animate-fade-in" : "opacity-0"
             }`}
           >
@@ -192,28 +207,28 @@ function About() {
                 }}
               >
                 {/* Floating Icon Container */}
-                <div className="relative mb-6 flex justify-center">
+                <div className="relative mb-4 flex justify-center">
                   <div className="absolute inset-0 bg-gradient-to-br from-purple-400 to-purple-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity duration-500 scale-75"></div>
-                  <div className="relative bg-gradient-to-br from-purple-50 to-white p-5 md:p-6 rounded-3xl shadow-lg group-hover:shadow-2xl transition-all duration-500 group-hover:scale-110 group-hover:-rotate-3">
+                  <div className="relative bg-gradient-to-br from-purple-50 to-white p-4 md:p-6 rounded-3xl shadow-lg group-hover:shadow-2xl transition-all duration-500 group-hover:scale-110 group-hover:-rotate-3">
                     <div className="text-purple-600 transform transition-transform duration-500 group-hover:scale-110">
                       {value.icon}
                     </div>
                   </div>
                 </div>
 
-                {/* Title with underline effect */}
-                <h3 className="text-xl md:text-2xl font-bold text-neutral-900 mb-3 md:mb-4 relative inline-block">
+                {/* Title */}
+                <h3 className="text-xl font-bold text-neutral-900 mb-2 relative inline-block">
                   <span className="relative z-10">{value.title}</span>
                   <div className="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-l from-purple-600 to-purple-400 group-hover:w-full transition-all duration-500 ease-out"></div>
                 </h3>
 
                 {/* Description */}
-                <p className="text-neutral-600 leading-relaxed text-base md:text-lg px-2 group-hover:text-neutral-700 transition-colors duration-300">
+                <p className="text-neutral-600 leading-relaxed text-sm sm:text-base px-2 group-hover:text-neutral-700 transition-colors duration-300">
                   {value.description}
                 </p>
 
                 {/* Decorative line */}
-                <div className="mt-6 mx-auto w-12 h-1 bg-gradient-to-r from-transparent via-purple-300 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="mt-4 mx-auto w-10 h-0.5 bg-gradient-to-r from-transparent via-purple-300 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             ))}
           </div>
@@ -235,29 +250,36 @@ function About() {
                 למה לעבוד איתנו?
               </h2>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 text-base md:text-lg">
+              {/* FIX: Centering text and stacking elements for mobile. Icons disappear on mobile (hidden) and reappear on md screen. */}
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 text-base w-full max-w-lg mx-auto">
                 {whyWorkWithUs.map((item, index) => (
                   <div
                     key={index}
-                    className={`flex items-start gap-4 ${
-                      whyUsVisible ? "animate-slide-up" : "opacity-0"
-                    }`}
+                    // Default to centralized, stacked structure for mobile
+                    className={`flex flex-col items-center text-center ${
+                      // Switch to flex-row (horizontal) and right-aligned text on medium screens and up
+                      // And show icons only from medium screens
+                      "md:flex-row md:items-start md:text-right md:gap-3"
+                    } ${whyUsVisible ? "animate-slide-up" : "opacity-0"}`}
                     style={{
                       animationDelay: whyUsVisible ? item.delay : "0ms",
                       animationFillMode: "forwards",
                     }}
                   >
                     <Check
-                      size={24}
+                      size={20}
                       weight="bold"
                       color="#a78bfa"
-                      className="flex-shrink-0 mt-1 md:w-7 md:h-7"
+                      // Hide checkmark on small screens, show on medium screens and up
+                      className="hidden md:flex-shrink-0 md:block md:mt-1 md:w-7 md:h-7"
                     />
-                    <div>
-                      <h4 className="font-bold mb-2 text-purple-300">
+                    <div className="flex-grow">
+                      <h4 className="font-bold mb-1 text-purple-300 text-base sm:text-lg">
                         {item.title}
                       </h4>
-                      <p className="text-neutral-300">{item.description}</p>
+                      <p className="text-neutral-300 text-sm sm:text-base">
+                        {item.description}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -269,15 +291,15 @@ function About() {
 
       <Section bg="purple">
         <div className="text-center max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-purple-500 mb-4 md:mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-purple-500 mb-4">
             מוכנים להצטרף למשפחה?
           </h2>
-          <p className="text-lg md:text-xl text-purple-700 mb-8 md:mb-10">
+          <p className="text-base sm:text-lg text-purple-700 mb-8">
             בואו נדבר על איך אנחנו יכולים לעזור לכם להשיג את היעדים שלכם
           </p>
           <a
             href="/contact"
-            className="inline-block bg-white text-purple-600 hover:bg-neutral-50 px-8 md:px-12 py-3 md:py-4 rounded-lg font-bold text-base md:text-lg transform hover:scale-105 transition-all duration-200 shadow-xl"
+            className="inline-block bg-white text-purple-600 hover:bg-neutral-50 px-8 py-3 rounded-lg font-bold text-base transform hover:scale-105 transition-all duration-200 shadow-xl"
           >
             צרו קשר עכשיו
           </a>
