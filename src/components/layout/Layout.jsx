@@ -2,6 +2,8 @@ import Header from "./Header";
 import Footer from "./Footer";
 import InteractiveGrid from "./InteractiveGrid";
 import { useEffect, useState } from "react";
+import AccessibilityWidget from "../ui/AccessibilityWidget"; // Import 1
+import SkipToContent from "../ui/SkipToContent"; // Import 2
 
 function Layout({ children }) {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -16,13 +18,15 @@ function Layout({ children }) {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
+
   return (
     <>
+      <SkipToContent /> {/* Add Skip Link here */}
+      {/* Background Effects... */}
       <div
         style={{
           left: `${mousePosition.x}px`,
           top: `${mousePosition.y}px`,
-
           background:
             "radial-gradient(circle, rgba(203, 148, 255, 0.411) 0%, rgba(255, 255, 255, 0.63) 30%, transparent 70%)",
         }}
@@ -30,18 +34,25 @@ function Layout({ children }) {
       ></div>
       <InteractiveGrid mousePosition={mousePosition} />
       <div className="relative min-h-screen">
+        {/* Background blobs code... */}
         <div className="fixed inset-0 -z-10 overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,_white_40%,_transparent),radial-gradient(ellipse_80%_50%_at_80%_10%,_#f3e8ff_40%,_transparent),radial-gradient(ellipse_80%_50%_at_20%_90%,_#e9d5ff_40%,_transparent)] bg-white"></div>{" "}
+          {/* ... existing background divs ... */}
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,_white_40%,_transparent),radial-gradient(ellipse_80%_50%_at_80%_10%,_#f3e8ff_40%,_transparent),radial-gradient(ellipse_80%_50%_at_20%_90%,_#e9d5ff_40%,_transparent)] bg-white"></div>
           <div className="absolute -top-40 -right-40 w-[700px] h-[700px] bg-gradient-to-br from-purple-200/40 to-pink-200/30 rounded-full filter blur-[150px]"></div>
           <div className="absolute top-1/4 -left-48 w-[800px] h-[800px] bg-gradient-to-br from-purple-100/30 to-blue-100/20 rounded-full filter blur-[160px] animate-blob"></div>
           <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-gradient-to-br from-pink-100/30 to-purple-100/30 rounded-full filter blur-[140px] animate-blob animation-delay-2000"></div>
         </div>
+
         <div className="relative flex flex-col min-h-screen">
           <Header />
-          <main className="flex-grow">{children}</main>
+          {/* Add ID for Skip Link */}
+          <main id="main-content" className="flex-grow" tabIndex="-1">
+            {children}
+          </main>
           <Footer />
         </div>
       </div>
+      <AccessibilityWidget /> {/* Add Widget here */}
     </>
   );
 }

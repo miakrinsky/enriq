@@ -1,16 +1,7 @@
 import ProjectGallery from "../gallery/ProjectGallery";
-import { MapPin, Ruler, Clock, TrendUp } from "phosphor-react";
+import { MapPin, Ruler } from "phosphor-react";
 
-function Card({
-  id,
-  rooms,
-  street,
-  squareMeters,
-  time,
-  roi,
-  description,
-  gallery,
-}) {
+function Card({ id, rooms, street, squareMeters, description, gallery }) {
   return (
     <>
       <div className="mb-8 md:mb-20 flex items-center justify-center px-4">
@@ -38,24 +29,6 @@ function Card({
                     className="flex-shrink-0"
                   />
                   <span>שטח: {squareMeters} מ"ר</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Clock
-                    size={18}
-                    weight="duotone"
-                    color="#9333ea"
-                    className="flex-shrink-0"
-                  />
-                  <span>משך שיפוץ: {time}</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <TrendUp
-                    size={18}
-                    weight="duotone"
-                    color="#9333ea"
-                    className="flex-shrink-0"
-                  />
-                  <span>תשואה: {roi}%</span>
                 </div>
               </div>
             </div>

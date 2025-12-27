@@ -326,8 +326,6 @@ export const projects = [
     street: " סוקולוב",
     rooms: 1.5,
     squareMeters: 45,
-    time: "חודשיים",
-    roi: 6.5,
     before: project1before,
     after: project1after,
     description: `יחידה גדולה מדירה שחולקה ל-2,
@@ -355,8 +353,6 @@ export const projects = [
     street: " החלוץ",
     rooms: 1,
     squareMeters: 30,
-    time: "3 חודשים",
-    roi: 5.5,
     before: project2before,
     after: project2after,
     description: `דירת חדר עם כניסה פרטית ומרפסת.
@@ -385,8 +381,6 @@ export const projects = [
     street: " לוד",
     rooms: 3,
     squareMeters: 80,
-    time: "2 חודשים",
-    roi: 6.5,
     before: project3before,
     after: project3after,
     description: `ביצענו שיפוץ מלא והחלפת כל התשתיות, סנטריה ומטבח תוך שמירה מוקפדת ושחזור אלמנטים אותנטיים - רצפות, דלתות , חלונות ותריסי עץ.
@@ -424,8 +418,6 @@ export const projects = [
     street: "מסדה",
     rooms: 2.5,
     squareMeters: 75,
-    time: "2 חודשים",
-    roi: 6.5,
     before: project4before,
     after: project4after,
     description: `בוצע שיפוץ מלא, הכולל החלפת התשתיות, סנטריה ומטבח במלואם.
@@ -465,8 +457,6 @@ export const projects = [
     street: "החלוץ",
     rooms: 2,
     squareMeters: 50,
-    time: "2 חודשים",
-    roi: 6.5,
     before: project5before,
     after: project5after,
     description: `ביצענו שיפוץ קוסמטי מלא (ללא החלפת תשתיות מלאה). בדגש על תחושת מרחב והכנסת אור ואוויר לדירה - הרחבנו את חלון המטבח למקסימום, החלפנו את הקיר הסגור בקיר זכוכית אטומה.
@@ -501,8 +491,6 @@ export const projects = [
     street: "סוקולוב",
     rooms: 1,
     squareMeters: 30,
-    time: "2 חודשים",
-    roi: 6.5,
     before: project6before,
     after: project6after,
     description: `יחידה קטנה מדירה שחולקה ל-2,
@@ -530,8 +518,6 @@ export const projects = [
     street: "יוסף",
     rooms: 3,
     squareMeters: 60,
-    time: "2 חודשים",
-    roi: 6.5,
     before: project7before,
     after: project7after,
     description: `ביצענו חלוקה ל-2 יחידות של 2 חדרים כל אחת.
@@ -569,8 +555,6 @@ export const projects = [
     street: "יוסף",
     rooms: 2,
     squareMeters: 40,
-    time: "2 חודשים",
-    roi: 6.5,
     before: project8before,
     after: project8after,
     description: `ביצענו חלוקה ל-2 יחידות של 2 חדרים כל אחת.
@@ -604,8 +588,6 @@ export const projects = [
     street: "חברון",
     rooms: 3,
     squareMeters: 75,
-    time: "2 חודשים",
-    roi: 6.5,
     before: project9before,
     after: project9after,
     description: `קיבלנו לשיפוץ דירה גדולה ומרווחת אך קצת "עצובה". שברנו בה קיר אחד בין חלל הסלון למטבח, החלפנו את כל התשתיות לחדשות כולל סנטריה ומטבח.
@@ -642,8 +624,6 @@ export const projects = [
     street: "בלפור",
     rooms: 2.5,
     squareMeters: 60,
-    time: "2 חודשים",
-    roi: 6.5,
     before: project10before,
     after: project10after,
     description: `דירת 2.5 חד' קלאסית של הדר, בעלת מבנה מעולה, ככה שלא שינינו אותו - רק החזרנו אותה לחיים!
@@ -681,8 +661,6 @@ export const projects = [
     street: "ירושלים",
     rooms: 3.5,
     squareMeters: 90,
-    time: "2 חודשים",
-    roi: 6.5,
     before: project11before,
     after: project11after,
     description: `דירה שעמדה ריקה ומוזנחת במשך שנים. עברה שיפוץ תשתיות כללי כולל מטבח חדש גדול ומפנק וסנטריה.
@@ -720,8 +698,6 @@ export const projects = [
     street: "נורדאו",
     rooms: 2.5,
     squareMeters: 45,
-    time: "2 חודשים",
-    roi: 6.5,
     before: project12before,
     after: project12after,
     description: `ביצענו שיפוץ קוסמטי בסדר גודל בינוני הכולל הזזת המטבח ותשתיות מים וחשמל, כדי להרוויח חלל מרכזי נוח ופרקטי יותר.
@@ -749,8 +725,6 @@ export const projects = [
     street: "נורדאו",
     rooms: 2,
     squareMeters: 40,
-    time: "2 חודשים",
-    roi: 6.5,
     before: project13before,
     after: project13after,
     description: `הדירה עברה שיפוץ קוסמטי בינוני הכולל שדרוג המטבח, החלפת הקרמיקות ומידוף.
@@ -782,8 +756,6 @@ export const projects = [
     street: "חיים",
     rooms: 2,
     squareMeters: 50,
-    time: "2 חודשים",
-    roi: 6.5,
     before: project14before,
     after: project14after,
     description: `יחידה מדירה מחולקת, שעברה שיפוץ מלא והכנת תשתיות מ-0, למעט שירותים ומקלחת שהיו במצב מצויין.
@@ -802,8 +774,6 @@ export const projects = [
     street: "נורדאו",
     rooms: 2,
     squareMeters: 50,
-    time: "2 חודשים",
-    roi: 6.5,
     before: project15before,
     after: project15after,
     description: `בדירה בוצע שיפוץ קוסמטי קל, מבחינת תשתיות הדירה הייתה במצב טוב, אך רצינו לשדרג אותה במהירות ובזול, ולהפוך אותה ליותר אטרקטיבית.
@@ -826,8 +796,6 @@ export const projects = [
     street: "חיים",
     rooms: 1,
     squareMeters: 30,
-    time: "2 חודשים",
-    roi: 6.5,
     before: project16before,
     after: project16after,
     description: `יחידה מדירה מחולקת, שעברה שיפוץ מלא והכנת כל התשתיות מ-0. 
@@ -848,8 +816,6 @@ export const projects = [
     street: "יוסף",
     rooms: 2.5,
     squareMeters: 60,
-    time: "2 חודשים",
-    roi: 6.5,
     before: project17before,
     after: project17after,
     description: `הדירה עברה שיפוץ מלא הכולל החלפת כל התשתיות. 

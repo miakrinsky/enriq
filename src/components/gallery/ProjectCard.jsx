@@ -2,7 +2,7 @@ import {
   ReactCompareSlider,
   ReactCompareSliderImage,
 } from "react-compare-slider";
-import { MapPin, Ruler, Door, CalendarBlank, TrendUp } from "phosphor-react";
+import { MapPin, Ruler, Door } from "phosphor-react";
 
 function ProjectCard({ project, compact = false, onOpenModal }) {
   if (compact) {
@@ -11,10 +11,10 @@ function ProjectCard({ project, compact = false, onOpenModal }) {
       <div className="group relative overflow-hidden rounded-2xl shadow-2xl transition-all duration-300 hover:shadow-3xl">
         <div className="relative">
           <ReactCompareSlider
-            itemOne={<ReactCompareSliderImage src={project.after} alt="אחרי" />}
-            itemTwo={
+            itemOne={
               <ReactCompareSliderImage src={project.before} alt="לפני" />
             }
+            itemTwo={<ReactCompareSliderImage src={project.after} alt="אחרי" />}
             position={50}
             // Retaining the reduced height for better mobile fit
             style={{ height: "300px" }}
@@ -32,7 +32,7 @@ function ProjectCard({ project, compact = false, onOpenModal }) {
 
         {/* Glassmorphism card bottom */}
         <div className="relative bg-gradient-to-br from-neutral-900/95 to-neutral-800/95 backdrop-blur-xl p-4 border-t border-white/10">
-          {/* FIXED: Combined H3 and info line into a single flex container for maximum space saving */}
+          {/* Combined H3 and info line into a single flex container for maximum space saving */}
           <div className="flex items-center justify-between gap-2 mb-3">
             {/* H3 for Street Name */}
             <h3
@@ -65,7 +65,6 @@ function ProjectCard({ project, compact = false, onOpenModal }) {
               </div>
             </div>
           </div>
-          {/* END FIXED SECTION */}
 
           <div className="flex items-center justify-center gap-2 text-purple-300 text-sm font-semibold group-hover:gap-3 transition-all bg-purple-600/20 py-2 rounded-lg border border-purple-400/30">
             <span> מידע נוסף על הפרויקט</span>
@@ -125,35 +124,6 @@ function ProjectCard({ project, compact = false, onOpenModal }) {
               <span className="text-white font-semibold">
                 {project.squareMeters} מ"ר
               </span>
-            </div>
-          </div>
-
-          {/* Stats - glassmorphism cards */}
-          <div className="grid grid-cols-2 gap-4">
-            <div className="relative group overflow-hidden rounded-2xl bg-gradient-to-br from-purple-500/20 to-purple-600/20 backdrop-blur-sm border border-purple-400/30 p-5 hover:border-purple-400/50 transition-all">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-purple-500/20 rounded-full blur-2xl"></div>
-              <div className="relative">
-                <div className="flex items-center gap-2 text-purple-300 text-sm font-semibold mb-2">
-                  <TrendUp size={18} weight="duotone" />
-                  <span>תשואה</span>
-                </div>
-                <div className="text-3xl font-bold text-white">
-                  {project.roi}
-                </div>
-              </div>
-            </div>
-
-            <div className="relative group overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-500/20 to-emerald-600/20 backdrop-blur-sm border border-emerald-400/30 p-5 hover:border-emerald-400/50 transition-all">
-              <div className="absolute top-0 right-0 w-20 h-20 bg-emerald-500/20 rounded-full blur-2xl"></div>
-              <div className="relative">
-                <div className="flex items-center gap-2 text-emerald-300 text-sm font-semibold mb-2">
-                  <CalendarBlank size={18} weight="duotone" />
-                  <span>זמן ביצוע</span>
-                </div>
-                <div className="text-2xl font-bold text-white">
-                  {project.time}
-                </div>
-              </div>
             </div>
           </div>
 

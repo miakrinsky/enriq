@@ -58,3 +58,54 @@
     transform: translateY(0);
   }
 }
+/* Accessibility High Contrast Mode */
+.high-contrast {
+  filter: contrast(120%);
+  background-color: white !important;
+}
+
+.high-contrast * {
+  background-color: #000 !important;
+  color: #ff0 !important; /* Yellow on Black is standard accessible contrast */
+  border-color: #ff0 !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+.high-contrast img,
+.high-contrast svg {
+  filter: grayscale(100%) !important;
+  background-color: transparent !important;
+}
+
+/* Accessibility Underline Links */
+.underline-links a {
+  text-decoration: underline !important;
+  text-decoration-thickness: 2px !important;
+}
+
+/* Focus Indicator - MUST HAVE for Accessibility */
+:focus-visible {
+  outline: 3px solid #2563eb !important; /* Blue outline */
+  outline-offset: 2px;
+}
+
+/* "Skip to Content" link styles */
+.skip-link {
+  position: absolute;
+  top: -9999px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2563eb;
+  color: white;
+  padding: 1rem 2rem;
+  z-index: 9999;
+  border-radius: 0 0 8px 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}

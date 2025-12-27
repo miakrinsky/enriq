@@ -9,6 +9,13 @@ import {
 } from "phosphor-react";
 import { useEffect, useRef, useState } from "react";
 
+// staff pictures import
+import yan from "../assets/members/yan.jpeg";
+import shon from "../assets/members/shon.jpeg";
+import maya from "../assets/members/maya.jpeg";
+import shachar from "../assets/members/shachar.jpeg";
+import elizabeth from "../assets/members/elizabeth.jpeg";
+
 function About() {
   const [valuesVisible, setValuesVisible] = useState(false);
   const [whyUsVisible, setWhyUsVisible] = useState(false);
@@ -95,6 +102,15 @@ function About() {
     },
   ];
 
+  // team members array - Order affects display (Right to Left in Flex/Grid RTL)
+  const teamMembers = [
+    { id: 1, name: "יאן יעקב קרינסקי", pic: yan },
+    { id: 2, name: "שון קרינסקי", pic: shon },
+    { id: 3, name: "מיה דובדבני", pic: maya },
+    { id: 4, name: "שחר קורן", pic: shachar },
+    { id: 5, name: "אליזבט קרוגלוב", pic: elizabeth },
+  ];
+
   return (
     <>
       <Section>
@@ -107,37 +123,60 @@ function About() {
       </Section>
 
       <Section bg="gray">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-            {/* Image Block: Made the height consistent but manageable on mobile */}
-            <div>
-              <div className="bg-gradient-to-br from-purple-100 to-neutral-200 rounded-xl h-60 md:h-96 flex items-center justify-center shadow-lg">
-                <p className="text-neutral-400 text-sm md:text-lg">
-                  [תמונה של הצוות / המשרד]
-                </p>
-              </div>
+        <div className="max-w-6xl mx-auto px-4">
+          {/* Header and Text moved to top */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6">
+              מי אנחנו?
+            </h2>
+            <div className="max-w-4xl mx-auto space-y-4 text-base md:text-lg text-neutral-700 leading-relaxed">
+              <p>
+                <span className="font-semibold text-purple-600">
+                  Enriq Group
+                </span>{" "}
+                הוקמה מתוך הבנה שהשקעה בנדל"ן היא יותר מסתם רכישת דירה - היא
+                אומנות של זיהוי הזדמנויות, ביצוע חכם, וניהול מקצועי.
+              </p>
+              <p>
+                אנחנו מתמחים בשיפוץ ותיווך דירות השקעה בחיפה, עם דגש על שכונת
+                הדר המתפתחת. כל פרויקט מתוכנן בקפידה כדי למקסם את התשואה על
+                ההשקעה, תוך שמירה על סטנדרטים גבוהים של ביצוע.
+              </p>
             </div>
+          </div>
 
-            {/* Text Block: Centered H2 title for mobile */}
-            <div className="space-y-4 md:space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-2 md:mb-6 text-center md:text-right">
-                מי אנחנו?
-              </h2>
-              <div className="space-y-3 md:space-y-6 text-base text-neutral-700 leading-relaxed">
-                <p>
-                  <span className="font-semibold text-purple-600">
-                    Enriq Group
-                  </span>{" "}
-                  הוקמה מתוך הבנה שהשקעה בנדל"ן היא יותר מסתם רכישת דירה - היא
-                  אומנות של זיהוי הזדמנויות, ביצוע חכם, וניהול מקצועי.
-                </p>
-                <p>
-                  אנחנו מתמחים בשיפוץ ותיווך דירות השקעה בחיפה, עם דגש על שכונת
-                  הדר המתפתחת. כל פרויקט מתוכנן בקפידה כדי למקסם את התשואה על
-                  ההשקעה, תוך שמירה על סטנדרטים גבוהים של ביצוע.
-                </p>
+          {/* Team Members Grid 
+              Mobile: 6 columns total to allow 3+3 (50%) or 2+2+2 (33%) splits 
+              Desktop: 5 columns total for single row
+          */}
+          <div className="grid grid-cols-6 md:grid-cols-5 gap-4 md:gap-6">
+            {teamMembers.map((member, index) => (
+              <div
+                key={member.id}
+                className={`flex flex-col items-center
+                  ${
+                    // Logic for "Pyramid" layout on mobile:
+                    // First 2 items (index 0,1) span 3 columns (50% width) -> Top row
+                    // Next 3 items (index 2,3,4) span 2 columns (33% width) -> Bottom row
+                    // On Desktop (md), everyone spans 1 column
+                    index < 2
+                      ? "col-span-3 md:col-span-1"
+                      : "col-span-2 md:col-span-1"
+                  }
+                `}
+              >
+                <div className="w-full aspect-square bg-gradient-to-br from-purple-100 to-neutral-200 rounded-xl shadow-md overflow-hidden flex items-center justify-center mb-3 group hover:shadow-xl transition-all duration-300">
+                  <img
+                    src={member.pic}
+                    alt={member.name}
+                    className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
+                <span className="font-bold text-neutral-800 text-sm md:text-base text-center">
+                  {member.name}
+                </span>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </Section>
@@ -178,11 +217,9 @@ function About() {
                 כדי לקרוא את הכתבה המלאה במאקו על שיפוץ דירת השקעה בחיפה.
               </a>
             </div>
-            {/* End Image Link Block */}
           </div>
         </div>
       </Section>
-      {/* END SECTION: Press Coverage with Image Preview */}
 
       <Section bg="gray">
         <div ref={valuesRef} className="max-w-6xl mx-auto px-4">
@@ -206,7 +243,6 @@ function About() {
                   animationFillMode: "forwards",
                 }}
               >
-                {/* Floating Icon Container */}
                 <div className="relative mb-4 flex justify-center">
                   <div className="absolute inset-0 bg-gradient-to-br from-purple-400 to-purple-600 rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity duration-500 scale-75"></div>
                   <div className="relative bg-gradient-to-br from-purple-50 to-white p-4 md:p-6 rounded-3xl shadow-lg group-hover:shadow-2xl transition-all duration-500 group-hover:scale-110 group-hover:-rotate-3">
@@ -216,18 +252,15 @@ function About() {
                   </div>
                 </div>
 
-                {/* Title */}
                 <h3 className="text-xl font-bold text-neutral-900 mb-2 relative inline-block">
                   <span className="relative z-10">{value.title}</span>
                   <div className="absolute bottom-0 right-0 w-0 h-0.5 bg-gradient-to-l from-purple-600 to-purple-400 group-hover:w-full transition-all duration-500 ease-out"></div>
                 </h3>
 
-                {/* Description */}
                 <p className="text-neutral-600 leading-relaxed text-sm sm:text-base px-2 group-hover:text-neutral-700 transition-colors duration-300">
                   {value.description}
                 </p>
 
-                {/* Decorative line */}
                 <div className="mt-4 mx-auto w-10 h-0.5 bg-gradient-to-r from-transparent via-purple-300 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
             ))}
@@ -250,17 +283,13 @@ function About() {
                 למה לעבוד איתנו?
               </h2>
 
-              {/* FIX: Centering text and stacking elements for mobile. Icons disappear on mobile (hidden) and reappear on md screen. */}
               <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8 text-base w-full max-w-lg mx-auto">
                 {whyWorkWithUs.map((item, index) => (
                   <div
                     key={index}
-                    // Default to centralized, stacked structure for mobile
-                    className={`flex flex-col items-center text-center ${
-                      // Switch to flex-row (horizontal) and right-aligned text on medium screens and up
-                      // And show icons only from medium screens
-                      "md:flex-row md:items-start md:text-right md:gap-3"
-                    } ${whyUsVisible ? "animate-slide-up" : "opacity-0"}`}
+                    className={`flex flex-col items-center text-center md:flex-row md:items-start md:text-right md:gap-3 ${
+                      whyUsVisible ? "animate-slide-up" : "opacity-0"
+                    }`}
                     style={{
                       animationDelay: whyUsVisible ? item.delay : "0ms",
                       animationFillMode: "forwards",
@@ -270,7 +299,6 @@ function About() {
                       size={20}
                       weight="bold"
                       color="#a78bfa"
-                      // Hide checkmark on small screens, show on medium screens and up
                       className="hidden md:flex-shrink-0 md:block md:mt-1 md:w-7 md:h-7"
                     />
                     <div className="flex-grow">
