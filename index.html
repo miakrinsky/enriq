@@ -9,5 +9,25 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <!-- Accessibility -->
+<script>
+window.args = {
+	sitekey   : '1974a512ab282619ce060cd3908ea83c',
+	position  : 'Right',
+	language  : 'HE',
+	container : '',
+	icon : '',
+	access : 'https://vee-crm.com',
+};
+
+(function(doc, head, body){
+	var embed = doc.createElement('script');
+	embed.src = window.args['access'] + '/js/';
+	embed.defer = true;
+	embed.crossOrigin = 'anonymous';
+	embed.setAttribute('data-cfasync', true );
+	body? body.appendChild(embed) : head.appendChild(embed);
+})(document, document.head, document.body);
+</script>
   </body>
 </html>

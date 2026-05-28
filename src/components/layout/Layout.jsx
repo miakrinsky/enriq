@@ -2,7 +2,6 @@ import Header from "./Header";
 import Footer from "./Footer";
 import InteractiveGrid from "./InteractiveGrid";
 import { useEffect, useState } from "react";
-import AccessibilityWidget from "../ui/AccessibilityWidget"; // Import 1
 import SkipToContent from "../ui/SkipToContent"; // Import 2
 
 function Layout({ children }) {
@@ -52,7 +51,6 @@ function Layout({ children }) {
           <Footer />
         </div>
       </div>
-      <AccessibilityWidget /> {/* Add Widget here */}
     </>
   );
 }
