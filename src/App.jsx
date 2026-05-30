@@ -7,6 +7,7 @@ import Gallery from "./pages/Gallery";
 import PageNotFound from "./pages/PageNotFound";
 import ScrollToTop from "./components/ui/ScrollToTop";
 import ScrollToTopOnRouteChange from "./components/ui/ScrollToTopOnRouteChange";
+import Accessibility from "./pages/Accessibility";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="*" element={<PageNotFound />} />
+            <Route path="/accessibility" element={<Accessibility />} />
           </Routes>
         </Layout>
       </BrowserRouter>
