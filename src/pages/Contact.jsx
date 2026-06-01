@@ -110,7 +110,7 @@ function Contact() {
                 <a
                   href="mailto:info@enriq.co.il"
                   className="relative group overflow-hidden rounded-2xl bg-gradient-to-br from-neutral-900 to-neutral-800 p-5 hover:shadow-2xl transition-all duration-300 border border-white/10 block"
-                  aria-label="שלח אימייל ל-info@enriq.co.il"
+                  aria-label="שלח אימייל ל-enriq.office@gmail.com"
                 >
                   <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/20 rounded-full blur-2xl"></div>
                   <div className="relative">
@@ -129,7 +129,7 @@ function Contact() {
                         className="text-white/90 text-base font-medium break-all mb-1"
                         dir="rtl"
                       >
-                        info@enriq.co.il
+                        enriq.office@gmail.com{" "}
                       </p>
                     </div>
                   </div>
