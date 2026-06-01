@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import { navLinkStyles } from "../../utils/styles";
 
 function Footer() {
   const year = new Date().getFullYear();
@@ -10,7 +9,7 @@ function Footer() {
           <p className="text-sm text-neutral-200">
             © {year} Enriq Group | כל הזכויות שמורות |{" "}
             <NavLink to="/accessibility" className="text-sm text-neutral-200">
-הצהרת נגישות 
+              הצהרת נגישות
             </NavLink>
           </p>
         </div>

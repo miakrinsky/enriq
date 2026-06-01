@@ -108,7 +108,7 @@ function Contact() {
 
                 {/* Email */}
                 <a
-                  href="mailto:info@enriq.co.il"
+                  href="mailto:enriq.office@gmail.com"
                   className="relative group overflow-hidden rounded-2xl bg-gradient-to-br from-neutral-900 to-neutral-800 p-5 hover:shadow-2xl transition-all duration-300 border border-white/10 block"
                   aria-label="שלח אימייל ל-enriq.office@gmail.com"
                 >
